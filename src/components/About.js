@@ -30,7 +30,6 @@ const AboutContainer = styled.div`
   display: grid;
   grid-template-columns: 10% 80% 10%;
   grid-template-rows: auto;
-  border-bottom: 7px dashed black;
   background-color: #dedede;
 `;
 
