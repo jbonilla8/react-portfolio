@@ -65,8 +65,14 @@ const HeroButton = styled.button`
 `;
 
 const RightPanel = styled.div`
+  display: flex;
   grid-column: 2/3;
   overflow: hidden;
   justify-self: center;
   width: 100%;
+  background: linear-gradient(#94afba, #8da8b3);
+
+  img {
+    width: 100%;
+  }
 `;

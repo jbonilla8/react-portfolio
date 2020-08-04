@@ -18,6 +18,7 @@ const ContactWrapper = styled.div`
   grid-template-columns: 10% 80% 10%;
   grid-template-rows: auto;
   height: 200px;
+  background-color: #dedede;
 `;
 
 const ContactContainer = styled.div`
