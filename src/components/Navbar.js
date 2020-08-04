@@ -32,7 +32,7 @@ const NavWrapper = styled.div`
 const NavContainer = styled.div`
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(6, auto);
+  grid-template-columns: 12.5% repeat(5, 15%) 12.5%;
   grid-template-rows: 50px;
   background-color: black;
   position: absolute;
@@ -49,6 +49,7 @@ const NavContainer = styled.div`
     text-decoration: none;
     color: white;
     font-weight: 700;
+    letter-spacing: 0.1em;
 
     &:hover {
       color: #b0c4d4;
@@ -57,21 +58,21 @@ const NavContainer = styled.div`
 `;
 
 const Home = styled.div`
-  grid-column: 1/2;
-`;
-
-const About = styled.div`
   grid-column: 2/3;
 `;
 
-const ReactApps = styled.div`
+const About = styled.div`
   grid-column: 3/4;
 `;
 
-const Designs = styled.div`
+const ReactApps = styled.div`
   grid-column: 4/5;
 `;
 
-const Contact = styled.div`
+const Designs = styled.div`
   grid-column: 5/6;
+`;
+
+const Contact = styled.div`
+  grid-column: 6/7;
 `;

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Footer = () => <FooterWrapper>Jalisa Bonilla &copy; 2020</FooterWrapper>;
+const Footer = () => <FooterWrapper>&copy; Jalisa Bonilla 2020</FooterWrapper>;
 
 export default Footer;
 

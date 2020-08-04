@@ -6,8 +6,9 @@ const About = () => (
     <Text>
       <h1>About</h1>
       <p>
-        I create captivating websites that offer responsive
-        and intuitive user experiences. I am originally from Nebraska but just recently moved to Florida. So far, I am really diggin the sunshine state!
+        I create captivating websites that offer responsive and intuitive user
+        experiences. I am originally from Nebraska but just recently moved to
+        Florida. So far, I am really diggin the sunshine state!
       </p>
 
       <p>
@@ -34,6 +35,7 @@ const AboutContainer = styled.div`
 `;
 
 const Text = styled.div`
+  padding: 50px 0;
   grid-column: 2/3;
 
   p {

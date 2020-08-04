@@ -59,7 +59,8 @@ const HeroButton = styled.button`
   font-size: 1.2rem;
 
   &:hover {
-    background-color: #71335B;
+    ${'' /* background-color: #71335B; */}
+    background-color: #0F5257;
   }
 `;
 
