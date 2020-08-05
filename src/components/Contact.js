@@ -53,6 +53,7 @@ const PhoneImg = styled.img`
   grid-row: 1/2;
   width: 3rem;
   height: 3rem;
+  cursor: pointer;
 `;
 
 const PhoneLink = styled.a`
@@ -65,6 +66,7 @@ const EmailImg = styled.img`
   grid-row: 1/2;
   width: 3.6rem;
   height: 2.8rem;
+  cursor: pointer;
 `;
 
 const EmailLink = styled.a`
@@ -77,6 +79,7 @@ const GitHubImg = styled.img`
   grid-row: 1/2;
   width: 3rem;
   height: 3rem;
+  cursor: pointer;
 `;
 
 const GitHubLink = styled.a`

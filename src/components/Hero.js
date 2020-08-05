@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
+import { device } from '../shared/styles';
 import HeroImage from '../images/workdesk.jpg';
 import Profile from '../images/profile.jpg';
 
@@ -26,6 +27,10 @@ const HeroContainer = styled.div`
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 100vh;
+
+  @media (max-width: ${device.laptopM}) {
+    grid-template-columns: auto;
+  }
 `;
 
 const LeftPanel = styled.div`
@@ -71,6 +76,10 @@ const RightPanel = styled.div`
   justify-self: center;
   width: 100%;
   background: linear-gradient(#94afba, #8da8b3);
+
+  @media (max-width: ${device.laptopM}) {
+    display: none;
+  }
 
   img {
     width: 100%;
