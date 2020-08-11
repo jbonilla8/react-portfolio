@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const About = () => (
-  <AboutContainer>
+  <AboutContainer id="about">
     <Text>
       <h1>About</h1>
       <p>

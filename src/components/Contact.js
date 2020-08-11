@@ -6,7 +6,7 @@ import EnvelopeIcon from '../images/icons/envelope.png';
 import GitHubIcon from '../images/icons/github.png';
 
 const Contact = () => (
-  <ContactWrapper>
+  <ContactWrapper id="contact">
     <ContactContainer>
       <PhoneImg src={PhoneIcon} alt="image of a black phone icon" />
       <PhoneLink href="tel:+1402-499-0590">+1 (402) 499-0590</PhoneLink>

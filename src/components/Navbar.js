@@ -8,16 +8,16 @@ const Navbar = () => (
         <a href="#">Home</a>
       </Home>
       <About>
-        <a href="#">About</a>
+        <a href="#about">About</a>
       </About>
       <ReactApps>
-        <a href="#">React Apps</a>
+        <a href="#reactapps">React Apps</a>
       </ReactApps>
       <Designs>
-        <a href="#">Designs</a>
+        <a href="#designs">Designs</a>
       </Designs>
       <Contact>
-        <a href="#">Contact</a>
+        <a href="#contact">Contact</a>
       </Contact>
     </NavContainer>
   </NavWrapper>

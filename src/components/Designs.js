@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { device } from '../shared/styles';
 
 const Designs = () => (
-  <DesignsWrapper>
+  <DesignsWrapper id="designs">
     <Container>
       <h1>Designs</h1>
       <Tiles>
