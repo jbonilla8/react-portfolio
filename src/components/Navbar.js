@@ -35,11 +35,15 @@ const NavContainer = styled.div`
   grid-template-columns: 12.5% repeat(5, 15%) 12.5%;
   grid-template-rows: 50px;
   background-color: black;
-  position: absolute;
+  z-index: 1000;
   left: 0;
   right: 0;
-  bottom: 0;
 
+  position: ${props => (props.isSticky ? 'fixed' : 'absolute')};
+  bottom: ${props => (props.isSticky ? 'revert' : '0')};
+  top: ${props => (props.isSticky ? 0 : 'revert')};
+
+  height: 50px;
   list-style: none;
   text-align: center;
   align-items: center;

@@ -4,15 +4,17 @@ import { device } from '../shared/styles';
 import HeroImage from '../images/workdesk.jpg';
 import Profile from '../images/profile.jpg';
 
-const Hero = () => (
+const Hero = (props) => (
   <Fragment>
-    <HeroContainer>
+    <HeroContainer ref={props.heroOuterContainerRef}>
       <LeftPanel>
         <ProfilePic src={Profile} alt="Photo of Jalisa Bonilla" />
         <HeroText>
           Hi, my name is Jalisa. I'm a Front End Web Developer & Designer.
         </HeroText>
-        <HeroButton>See My Work</HeroButton>
+        <a href="#reactapps">
+          <HeroButton>See My Work</HeroButton>
+        </a>
       </LeftPanel>
       <RightPanel>
         <img src={HeroImage} alt="Desk area with plant, notebook, and laptop" />
@@ -56,11 +58,11 @@ const HeroText = styled.div`
 const HeroButton = styled.button`
   color: white;
   cursor: pointer;
-  background-color: #9a447c;
+  background-color: #902A64;
   margin-top: 2rem;
   border: none;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 12px 24px;
   font-size: 1.2rem;
 
   &:hover {
