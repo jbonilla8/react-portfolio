@@ -4,21 +4,11 @@ import styled from 'styled-components';
 const Navbar = (props) => (
   <NavWrapper>
     <NavContainer isSticky={props.isSticky}>
-      <Home>
-        <a href="#home">Home</a>
-      </Home>
-      <About>
-        <a href="#about">About</a>
-      </About>
-      <ReactApps>
-        <a href="#reactapps">React Apps</a>
-      </ReactApps>
-      <Designs>
-        <a href="#designs">Designs</a>
-      </Designs>
-      <Contact>
-        <a href="#contact">Contact</a>
-      </Contact>
+      <Home href="#home">Home</Home>
+      <About href="#about">About</About>
+      <ReactApps href="#reactapps">React Apps</ReactApps>
+      <Designs href="#designs">Designs</Designs>
+      <Contact href="#contact">Contact</Contact>
     </NavContainer>
   </NavWrapper>
 );
@@ -61,22 +51,22 @@ const NavContainer = styled.div`
   }
 `;
 
-const Home = styled.div`
+const Home = styled.a`
   grid-column: 2/3;
 `;
 
-const About = styled.div`
+const About = styled.a`
   grid-column: 3/4;
 `;
 
-const ReactApps = styled.div`
+const ReactApps = styled.a`
   grid-column: 4/5;
 `;
 
-const Designs = styled.div`
+const Designs = styled.a`
   grid-column: 5/6;
 `;
 
-const Contact = styled.div`
+const Contact = styled.a`
   grid-column: 6/7;
 `;

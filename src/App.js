@@ -30,7 +30,7 @@ function App() {
   }, [heroParentRef, isSticky]);
 
   return (
-    <div className="App">
+    <div>
       <Hero heroOuterContainerRef={heroParentRef} />
       <Navbar isSticky={isSticky} />
       <About />

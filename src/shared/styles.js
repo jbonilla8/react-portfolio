@@ -3,6 +3,7 @@ export const device = {
   mobileM: '375px',
   mobileL: '500px',
   tablet: '768px',
+  tabletM: '880px',
   tabletL: '992px',
   laptop: '1024px',
   laptopM: '1224px',
