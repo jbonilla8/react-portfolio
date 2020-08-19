@@ -11,9 +11,10 @@ function App() {
 
   const [isSticky, setSticky] = useState(false);
   let heroParentRef = useRef(null);
+  const NavbarHeight = 50;
 
   const handleScroll = () => {
-    if (window.scrollY >= heroParentRef.current.offsetHeight - 50) {
+    if (window.scrollY >= heroParentRef.current.offsetHeight - NavbarHeight) {
       setSticky(true);
     } else {
       setSticky(false);
