@@ -6,7 +6,7 @@ import Profile from '../images/profile.jpg';
 
 const Hero = (props) => (
   <Fragment>
-    <HeroContainer ref={props.heroOuterContainerRef}>
+    <HeroContainer ref={props.heroOuterContainerRef} id="home">
       <LeftPanel>
         <ProfilePic src={Profile} alt="Photo of Jalisa Bonilla" />
         <HeroText>

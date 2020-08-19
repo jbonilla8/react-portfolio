@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Navbar = () => (
+const Navbar = (props) => (
   <NavWrapper>
-    <NavContainer>
+    <NavContainer isSticky={props.isSticky}>
       <Home>
-        <a href="#">Home</a>
+        <a href="#home">Home</a>
       </Home>
       <About>
         <a href="#about">About</a>
@@ -41,7 +41,7 @@ const NavContainer = styled.div`
 
   position: ${props => (props.isSticky ? 'fixed' : 'absolute')};
   bottom: ${props => (props.isSticky ? 'revert' : '0')};
-  top: ${props => (props.isSticky ? 0 : 'revert')};
+  top: ${props => (props.isSticky ? '0' : 'revert')};
 
   height: 50px;
   list-style: none;

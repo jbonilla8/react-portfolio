@@ -7,31 +7,31 @@ import Designs from './components/Designs';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-function App(props) {
+function App() {
 
   const [isSticky, setSticky] = useState(false);
   let heroParentRef = useRef(null);
 
   const handleScroll = () => {
-    // if the window is greater or equal to the hero's outer height minus the nav Height
-    // setSticky = true
+    if (window.scrollY >= heroParentRef.current.offsetHeight - 50) {
+      setSticky(true);
+    } else {
+      setSticky(false);
+    }
   };
 
   useEffect(() => {
-    if (heroParentRef.current) {
-      let heroHeight = heroParentRef.current.offsetHeight;
-      console.log('HERO HEIGHT', heroHeight);
-    }
-    // window.addEventListener('scroll', handleScroll);
-    // return () => {
-    //   window.removeEventListener('scroll', () => handleScroll);
-    // };
-  }, [heroParentRef]);
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', () => handleScroll);
+    };
+  }, [heroParentRef, isSticky]);
 
   return (
     <div className="App">
       <Hero heroOuterContainerRef={heroParentRef} />
-      <Navbar />
+      <Navbar isSticky={isSticky} />
       <About />
       <ReactApps />
       <Designs />
