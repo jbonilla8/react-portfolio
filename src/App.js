@@ -2,8 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import About from './components/About';
-import ReactApps from './components/ReactApps';
-import Designs from './components/Designs';
+import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -34,8 +33,7 @@ function App() {
       <Hero heroOuterContainerRef={heroParentRef} />
       <Navbar isSticky={isSticky} />
       <About />
-      <ReactApps />
-      <Designs />
+      <Projects />
       <Contact />
       <Footer />
     </div>

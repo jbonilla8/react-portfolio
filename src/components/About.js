@@ -33,7 +33,7 @@ const AboutWrapper = styled.div`
   display: grid;
   grid-template-columns: 10% 80% 10%;
   grid-template-rows: auto;
-  background-color: #dedede;
+  background-color: #ededed;
 `;
 
 const Text = styled.div`

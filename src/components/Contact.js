@@ -27,7 +27,7 @@ export default Contact;
 const ContactWrapper = styled.div`
   display: grid;
   grid-template-columns: 10% 80% 10%;
-  background-color: #dedede;
+  background-color: #ededed;
   padding: 20px 0;
 
   @media (min-width: ${device.tabletL}) {

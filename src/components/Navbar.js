@@ -6,8 +6,7 @@ const Navbar = (props) => (
     <NavContainer isSticky={props.isSticky}>
       <Home href="#home">Home</Home>
       <About href="#about">About</About>
-      <ReactApps href="#reactapps">React Apps</ReactApps>
-      <Designs href="#designs">Designs</Designs>
+      <Projects href="#projects">Projects</Projects>
       <Contact href="#contact">Contact</Contact>
     </NavContainer>
   </NavWrapper>
@@ -22,7 +21,7 @@ const NavWrapper = styled.div`
 const NavContainer = styled.div`
   display: grid;
   width: 100%;
-  grid-template-columns: 12.5% repeat(5, 15%) 12.5%;
+  grid-template-columns: 12.5% repeat(4, 18.75%) 12.5%;
   grid-template-rows: 50px;
   background-color: black;
   z-index: 1000;
@@ -59,14 +58,10 @@ const About = styled.a`
   grid-column: 3/4;
 `;
 
-const ReactApps = styled.a`
+const Projects = styled.a`
   grid-column: 4/5;
 `;
 
-const Designs = styled.a`
-  grid-column: 5/6;
-`;
-
 const Contact = styled.a`
-  grid-column: 6/7;
+  grid-column: 5/6;
 `;
