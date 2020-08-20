@@ -8,7 +8,7 @@ import JQueryIcon from '../images/icons/tech/jquery.png';
 import HTML5Icon from '../images/icons/tech/html5.png';
 import CSS3Icon from '../images/icons/tech/css3.png';
 import SassIcon from '../images/icons/tech/sass.png';
-import StyledCompIcon from '../images/icons/tech/styled.png';
+import StyledCompIcon from '../images/icons/tech/styled2.png';
 import GitIcon from '../images/icons/tech/git.png';
 import BootstrapIcon from '../images/icons/tech/bootstrap.png';
 import CsharpIcon from '../images/icons/tech/csharp.png';
@@ -21,16 +21,12 @@ const About = () => (
       <AboutContainer>
         <P1>
           I create captivating websites that offer responsive and intuitive user
-          experiences. I am originally from Nebraska but just recently moved to
-          Florida. So far, I am really diggin the sunshine state!
+            experiences. I am originally from Nebraska but currently reside in
+            Florida. I am really diggin the sunshine state! Vivamus egestas felis a tortor vulputate suscipit. Pellentesque at libero nec odio condimentum ultrices. Interdum et malesuada fames ac ante ipsum primis in faucibus.
         </P1>
         <P2>
-          I am constantly expanding my knowledge of web related technologies and
-          design.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut auctor enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus egestas felis a tortor vulputate suscipit. I am constantly expanding my knowledge of web related technologies and design. Below are some I have worked with:
         </P2>
-        <P3>
-          Some Technologies I have worked with:
-        </P3>
         <TechIconsContainer>
           <ReactImg src={ReactIcon} alt="image of React framework icon" />
           <JavaScriptImg src={JavaScriptIcon} alt="image of JavaScript language icon" />
@@ -58,6 +54,11 @@ const AboutWrapper = styled.div`
   grid-template-rows: auto;
   background-color: #ededed;
   padding: 100px 0;
+  border-bottom: 1px solid black;
+
+  @media (max-width: ${device.mobileL}) {
+    padding: 50px 0;
+  }
 `;
 
 const Text = styled.div`
@@ -88,27 +89,19 @@ const P1 = styled.p`
 `;
 
 const P2 = styled.p`
-  grid-column: 1/2;
-  grid-row: 2/3;
-
-  @media (max-width: ${device.tabletL}) {
-    grid-column: 1/span 2;
-  }
-`;
-
-const P3 = styled.p`
   grid-column: 2/3;
   grid-row: 1/2;
 
   @media (max-width: ${device.tabletL}) {
     grid-column: 1/span 2;
-    grid-row: 3/4;
+    grid-row: 2/3;
   }
 `;
 
 const TechIconsContainer = styled.div`
   grid-column: 1/span 3;
   grid-row: 3/4;
+  justify-self: center;
 
   @media (max-width: ${device.tabletL}) {
     grid-column: 1/span 3;

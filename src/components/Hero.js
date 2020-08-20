@@ -12,7 +12,7 @@ const Hero = (props) => (
         <HeroText>
           Hi, my name is Jalisa. I'm a Front End Web Developer & Designer.
         </HeroText>
-        <a href="#reactapps">
+        <a href="#projects">
           <HeroButton>See My Work</HeroButton>
         </a>
       </LeftPanel>
@@ -53,6 +53,10 @@ const HeroText = styled.div`
   font-weight: 500;
   font-size: 1.8rem;
   margin-top: 2rem;
+
+  @media (max-width: ${device.tabletL}) {
+    font-size: 1.4rem;
+  }
 `;
 
 const HeroButton = styled.button`
