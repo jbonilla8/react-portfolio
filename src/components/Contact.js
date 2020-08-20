@@ -27,7 +27,7 @@ export default Contact;
 const ContactWrapper = styled.div`
   display: grid;
   grid-template-columns: 10% 80% 10%;
-  background-color: #ededed;
+  background-color: #fff;
   padding: 20px 0;
 
   @media (min-width: ${device.tabletL}) {
@@ -47,9 +47,13 @@ const ContactContainer = styled.div`
 
   a {
     text-decoration: none;
-    color: #3c748e;
     font-weight: 700;
     font-size: 0.9rem;
+    color: black;
+
+    &:hover {
+      color: #3c748e;
+    }
 
     @media (min-width: ${device.tablet}) {
       font-size: 1.1rem;
@@ -72,8 +76,8 @@ const PhoneImg = styled.img`
   cursor: pointer;
 
   @media (min-width: ${device.tabletL}) {
-    width: 3rem;
-    height: 3rem;
+    width: 2.8rem;
+    height: 2.8rem;
   }
 `;
 
@@ -85,14 +89,15 @@ const PhoneLink = styled.a`
 const EmailImg = styled.img`
   grid-column: 1/2;
   grid-row: 3/4;
-
-  max-width: 3.6rem;
-  max-height: 2.8rem;
+  max-width: 2.8rem;
+  max-height: 2.2rem;
   cursor: pointer;
 
   @media (min-width: ${device.tabletL}) {
     grid-column: 2/3;
     grid-row: 1/2;
+    width: 3rem;
+    max-height: 2.8rem;
   }
 `;
 
@@ -116,8 +121,8 @@ const GitHubImg = styled.img`
   @media (min-width: ${device.tabletL}) {
     grid-column: 3/4;
     grid-row: 1/2;
-    width: 3rem;
-    height: 3rem;
+    width: 2.8rem;
+    height: 2.8rem;
   }
 `;
 

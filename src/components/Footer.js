@@ -10,8 +10,8 @@ const FooterWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
-  background-color: #3c748e;
+  color: #3C748E;
+  background-color: #ededed;
 `;
