@@ -57,14 +57,18 @@ const AboutWrapper = styled.div`
   grid-template-columns: 10% 80% 10%;
   grid-template-rows: auto;
   background-color: #ededed;
+  padding: 100px 0;
 `;
 
 const Text = styled.div`
-  padding: 100px 0;
   grid-column: 2/3;
   font-weight: 500;
   font-size: 1.3rem;
   line-height: 2.2rem;
+
+  @media (max-width: ${device.tabletL}) {
+    font-size: 1rem;
+  }
 `;
 
 const AboutContainer = styled.div`
@@ -103,55 +107,70 @@ const P3 = styled.p`
 `;
 
 const TechIconsContainer = styled.div`
-  grid-column: 2/3;
-  grid-row: 2/3;
+  grid-column: 1/span 3;
+  grid-row: 3/4;
+
+  @media (max-width: ${device.tabletL}) {
+    grid-column: 1/span 3;
+    grid-row: 4/5;
+  }
 `;
 
 const ReactImg = styled.img`
-  width: 20%
+  width: 105px;
 `;
 
 const JavaScriptImg = styled.img`
-  width: 15%;
+  width: 67px;
+  margin-right: 20px;
 `;
 
 const JQueryImg = styled.img`
-  width: 30%;
+  width: 175px;
+  margin-right: 20px;
 `;
 
 const HTML5Img = styled.img`
-  width: 15%;
+  width: 72px;
+  margin-right: 20px;
 `;
 
 const CSS3Img = styled.img`
-  width: 10.8%;
+  width: 51px;
+  margin-right: 20px;
 `;
 
 const SassImg = styled.img`
-  width: 15%;
+  width: 89px;
+  margin-right: 20px;
 `;
 
 const StyledCompImg = styled.img`
-  width: 15%;
+  width: 75px;
+  margin-right: 20px;
 `;
 
 const GitImg = styled.img`
-  width: 20%;
+  width: 100px;
+  margin-right: 20px;
 `;
 
 const BootstrapImg = styled.img`
-  width: 15%;
+  width: 72px;
+  margin-right: 20px;
 `;
 
 const CsharpImg = styled.img`
-  width: 15%;
+  width: 72px;
+  margin-right: 20px;
 `;
 
 const PhotoshopImg = styled.img`
-  width: 15%;
+  width: 72px;
+  margin-right: 20px;
 `;
 
 const FigmaImg = styled.img`
-  width: 10%;
+  width: 45px;
 `;
 

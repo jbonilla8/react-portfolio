@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { device } from '../shared/styles';
 import MovieFinderThumbnail from '../images/thumbnails/movieFinder.png';
 import CalendarAppThumbnail from '../images/thumbnails/calendarApp.png';
 import QuestOverlandThumbnail from '../images/thumbnails/questOverland.png';
@@ -52,6 +53,11 @@ const Filters = styled.div`
     &:focus, .active {
       color: white;
       background-color: #0F5257;
+    }
+
+    @media (max-width: ${device.mobileL}) {
+      font-size: 0.8rem;
+      padding: 10px 25px;
     }
   }
 `;
