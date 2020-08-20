@@ -61,12 +61,12 @@ const HeroButton = styled.button`
   background-color: #902A64;
   margin-top: 2rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 0px;
+  outline: none;
   padding: 12px 24px;
   font-size: 1.2rem;
 
   &:hover {
-    ${'' /* background-color: #71335B; */}
     background-color: #0F5257;
   }
 `;

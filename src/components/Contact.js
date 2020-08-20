@@ -32,7 +32,7 @@ const ContactWrapper = styled.div`
 
   @media (min-width: ${device.tabletL}) {
     grid-template-rows: auto;
-    padding: 50px 0;
+    padding: 100px 0;
   }
 `;
 

@@ -9,36 +9,72 @@ import SugarPopThumbnail from '../images/thumbnails/sugarPop.png';
 
 const Projects = () => (
   <ProjectsWrapper id="projects">
-    <Tile1 src={MovieFinderThumbnail} />
-    <Tile2 src={CalendarAppThumbnail} />
-    <Tile3 src={QuestOverlandThumbnail} />
-    <Tile4 src={MqualThumbnail} />
-    <Tile5 src={GranolaThumbnail} />
-    <Tile6 src={SugarPopThumbnail} />
+    <Filters>
+      <button>ALL</button>
+      <button>REACT-JS</button>
+      <button>DESIGNS</button>
+    </Filters>
+    <TilesContainer>
+      <Tile1 src={MovieFinderThumbnail} />
+      <Tile2 src={CalendarAppThumbnail} />
+      <Tile3 src={QuestOverlandThumbnail} />
+      <Tile4 src={MqualThumbnail} />
+      <Tile5 src={GranolaThumbnail} />
+      <Tile6 src={SugarPopThumbnail} />
+    </TilesContainer>
   </ProjectsWrapper>
 );
 
 export default Projects;
 
 const ProjectsWrapper = styled.div`
-  display: grid;
-  overflow: hidden;
-  height: 650px;
-  grid-template-columns: repeat(3, 33.33%);
-  grid-template-rows: repeat(2, 50%);
-  justify-content: center;
-  justify-items: center;
-  background-color: black;
+  margin: 50px;
+`;
 
-  img { 
-    width: 100%;
-    height: 100%;
+const Filters = styled.div`
+  display: flex;
+  color: black;
+  padding-bottom: 25px;
+  justify-content: space-around;
 
-      &:hover {
-        webkit-filter: blur(4px); /* Chrome, Safari, Opera */
-        filter: blur(4px);
-      }
+  button {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 0px;
+    padding: 15px 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    outline: none;
+
+    &:focus, .active {
+      color: white;
+      background-color: #0F5257;
+    }
   }
+`;
+
+const TilesContainer = styled.div`
+display: grid;
+overflow: hidden;
+height: 650px;
+grid-template-columns: repeat(3, 33.33%);
+grid-template-rows: repeat(2, 50%);
+justify-content: center;
+justify-items: center;
+background-color: black;
+
+img { 
+  width: 100%;
+  height: 100%;
+
+    &:hover {
+      webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+      filter: blur(4px);
+    }
+}
 `;
 
 const Tile1 = styled.img`

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { device } from '../shared/styles';
+
 import ReactIcon from '../images/icons/tech/react2.png';
 import JavaScriptIcon from '../images/icons/tech/javascript.png';
 import JQueryIcon from '../images/icons/tech/jquery.png';
@@ -59,7 +60,7 @@ const AboutWrapper = styled.div`
 `;
 
 const Text = styled.div`
-  padding: 50px 0;
+  padding: 100px 0;
   grid-column: 2/3;
   font-weight: 500;
   font-size: 1.3rem;
