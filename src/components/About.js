@@ -20,7 +20,7 @@ const About = () => (
     <Text>
       <AboutContainer>
         <P1>
-          I create captivating websites that offer responsive and intuitive user
+            I create captivating websites that offer responsive and intuitive user
             experiences. I am originally from Nebraska but currently reside in
             Florida. I am really diggin the sunshine state! Vivamus egestas felis a tortor vulputate suscipit. Pellentesque at libero nec odio condimentum ultrices. Interdum et malesuada fames ac ante ipsum primis in faucibus.
         </P1>
