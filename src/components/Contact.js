@@ -8,13 +8,19 @@ import GitHubIcon from '../images/icons/github.png';
 const Contact = () => (
   <ContactWrapper id="contact">
     <ContactContainer>
-      <PhoneImg src={PhoneIcon} alt="image of a black phone icon" />
+      <a href="tel:+1402-499-0590">
+        <PhoneImg src={PhoneIcon} alt="image of a black phone icon" />
+      </a>
       <PhoneLink href="tel:+1402-499-0590">+1 (402) 499-0590</PhoneLink>
-      <EmailImg src={EnvelopeIcon} alt="image of a black envelope icon" />
+      <a href="mailto:jalisabonilla10@gmail.com">
+        <EmailImg src={EnvelopeIcon} alt="image of a black envelope icon" />
+      </a>
       <EmailLink href="mailto:jalisabonilla10@gmail.com">
         jalisabonilla10@gmail.com
       </EmailLink>
-      <GitHubImg src={GitHubIcon} alt="image of a black GitHub icon" />
+      <a href="https://github.com/jbonilla8">
+        <GitHubImg src={GitHubIcon} alt="image of a black GitHub icon" />
+      </a>
       <GitHubLink href="https://github.com/jbonilla8">
         https://github.com/jbonilla8
       </GitHubLink>

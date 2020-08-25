@@ -50,7 +50,7 @@ const Filters = styled.div`
     letter-spacing: 0.2rem;
     outline: none;
 
-    &:focus, .active {
+    &:focus, &:active {
       color: white;
       background-color: #0F5257;
     }
