@@ -34,11 +34,10 @@ const ContactWrapper = styled.div`
   display: grid;
   grid-template-columns: 10% 80% 10%;
   background-color: #fff;
-  padding: 20px 0px 60px 0px;
+  padding: 60px 0px;
 
   @media (min-width: ${device.tabletL}) {
     grid-template-rows: auto;
-    padding: 50px 0px 100px 0px;
   }
 `;
 

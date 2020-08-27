@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { device } from '../shared/styles';
 import MovieFinderThumbnail from '../images/thumbnails/movieFinder.png';
@@ -8,33 +8,42 @@ import MqualThumbnail from '../images/thumbnails/mqual.png';
 import GranolaThumbnail from '../images/thumbnails/granola.png';
 import SugarPopThumbnail from '../images/thumbnails/sugarPop.png';
 
-const Projects = () => (
-  <ProjectsWrapper id="projects">
-    <Filters>
-      <button>ALL</button>
-      <button>REACT-JS</button>
-      <button>DESIGNS</button>
-    </Filters>
-    <TilesContainer>
-      <Tile>
-        <img src={MovieFinderThumbnail} alt="thumbnail of MovieFinder project" />
-      </Tile>
-      <Tile>
-        <img src={CalendarAppThumbnail} alt="thumbnail of eCalendar project" />
+const Projects = () => {
+
+  return (
+    <ProjectsWrapper id="projects">
+      <Filters>
+        <button>ALL</button>
+        <button>REACT-JS</button>
+        <button>DESIGNS</button>
+      </Filters>
+      <TilesContainer>
+        <Tile>
+          <img src={MovieFinderThumbnail} alt="thumbnail of MovieFinder project" />
+          {/* <DetailsContainer>
+            <p>some text here</p>
+            <button>LEARN MORE</button>
+          </DetailsContainer> */}
         </Tile>
-      <Tile>
-        <img src={QuestOverlandThumbnail} alt="thumbnail of Quest Overland design project" />
-      </Tile>
-      <Tile>
-        <img src={MqualThumbnail} alt="thumbnail of Mqual design project" />
-      </Tile>
-      <Tile>
-        <img src={GranolaThumbnail} alt="thumbnail of Peace Lovin' Granola project" />
-      </Tile>
-      <Tile><img src={SugarPopThumbnail} alt="thumbnail of Sugar Pop Bakery design project" /></Tile>
-    </TilesContainer>
-  </ProjectsWrapper>
-);
+        <Tile>
+          <img src={CalendarAppThumbnail} alt="thumbnail of eCalendar project" />
+        </Tile>
+        <Tile>
+          <img src={QuestOverlandThumbnail} alt="thumbnail of Quest Overland design project" />
+        </Tile>
+        <Tile>
+          <img src={MqualThumbnail} alt="thumbnail of Mqual design project" />
+        </Tile>
+        <Tile>
+          <img src={GranolaThumbnail} alt="thumbnail of Peace Lovin' Granola project" />
+        </Tile>
+        <Tile>
+          <img src={SugarPopThumbnail} alt="thumbnail of Sugar Pop Bakery design project" />
+        </Tile>
+      </TilesContainer>
+    </ProjectsWrapper>
+  )
+};
 
 export default Projects;
 
@@ -91,8 +100,25 @@ const TilesContainer = styled.div`
 
 const Tile = styled.div`
   cursor: pointer;
+  position: relative;
+  display: flex;
 
   img {
     width: 100%;
   }
 `;
+
+// const DetailsContainer = styled.div`
+//   position: absolute;
+//   color: black;
+//   text-align: center;
+//   width: 100%;
+//   height: 100%;
+//   margin: auto;
+//   z-index: 100;
+
+//   &:hover {
+//     display: block;
+//     background-color: rgba(255, 255, 255, 0.9);
+//   }
+// `;

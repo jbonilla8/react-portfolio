@@ -9,7 +9,6 @@ const Navbar = (props) => {
 
   return (
     <Fragment>
-
       <NavWrapper open={open}>
         <NavContainer isSticky={props.isSticky}>
           <NavLinks>
@@ -43,9 +42,9 @@ const NavContainer = styled.div`
   position: ${props => (props.isSticky ? 'fixed' : 'absolute')};
   bottom: ${props => (props.isSticky ? 'revert' : '0')};
   top: ${props => (props.isSticky ? '0' : 'revert')};
-  min-height: 50px;
   list-style: none;
   font-size: 1.1rem;
+  min-height: 50px;
 `;
 
 const NavLinks = styled.div`
