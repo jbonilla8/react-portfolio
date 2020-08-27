@@ -44,7 +44,7 @@ const Filters = styled.div`
     color: black;
     border: none;
     border-radius: 0px;
-    padding: 15px 40px;
+    padding: 15px 30px;
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: 0.2rem;
@@ -52,7 +52,7 @@ const Filters = styled.div`
 
     &:focus, &:active {
       color: white;
-      background-color: #0F5257;
+      background-color: #3c748e;
     }
 
     @media (max-width: ${device.mobileL}) {
@@ -64,21 +64,25 @@ const Filters = styled.div`
 
 const TilesContainer = styled.div`
   display: grid;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 100vw;
+  margin: 0 1rem;
   grid-gap: 1rem;
   justify-content: center;
   justify-items: center;
 
   @media (min-width: 600px) {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, auto); 
   }
 
-  @media (min-width: 900px) {
-    grid-template-columns: repeat(3, 1fr); 
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(3, auto); 
   }
 `;
 
 const Tile = styled.div`
   cursor: pointer;
+
+  img {
+    width: 100%;
+  }
 `;
