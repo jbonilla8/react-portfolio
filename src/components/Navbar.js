@@ -43,7 +43,7 @@ const NavContainer = styled.div`
   position: ${props => (props.isSticky ? 'fixed' : 'absolute')};
   bottom: ${props => (props.isSticky ? 'revert' : '0')};
   top: ${props => (props.isSticky ? '0' : 'revert')};
-  height: 50px;
+  min-height: 50px;
   list-style: none;
   font-size: 1.1rem;
 `;

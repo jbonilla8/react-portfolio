@@ -16,11 +16,21 @@ const Projects = () => (
       <button>DESIGNS</button>
     </Filters>
     <TilesContainer>
-      <Tile><img src={MovieFinderThumbnail} alt="thumbnail of MovieFinder project" /></Tile>
-      <Tile><img src={CalendarAppThumbnail} alt="thumbnail of eCalendar project" /></Tile>
-      <Tile><img src={QuestOverlandThumbnail} alt="thumbnail of Quest Overland design project" /></Tile>
-      <Tile><img src={MqualThumbnail} alt="thumbnail of Mqual design project" /></Tile>
-      <Tile><img src={GranolaThumbnail} alt="thumbnail of Peace Lovin' Granola project" /></Tile>
+      <Tile>
+        <img src={MovieFinderThumbnail} alt="thumbnail of MovieFinder project" />
+      </Tile>
+      <Tile>
+        <img src={CalendarAppThumbnail} alt="thumbnail of eCalendar project" />
+        </Tile>
+      <Tile>
+        <img src={QuestOverlandThumbnail} alt="thumbnail of Quest Overland design project" />
+      </Tile>
+      <Tile>
+        <img src={MqualThumbnail} alt="thumbnail of Mqual design project" />
+      </Tile>
+      <Tile>
+        <img src={GranolaThumbnail} alt="thumbnail of Peace Lovin' Granola project" />
+      </Tile>
       <Tile><img src={SugarPopThumbnail} alt="thumbnail of Sugar Pop Bakery design project" /></Tile>
     </TilesContainer>
   </ProjectsWrapper>
