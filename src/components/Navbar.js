@@ -1,25 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, Fragment } from 'react';
 import styled from 'styled-components';
 import { device } from '../shared/styles';
 import NavBurger from './NavBurger';
+import VerticalNavMenu from './VerticalNavMenu';
 
 const Navbar = (props) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <NavWrapper open={open}>
-      <NavContainer isSticky={props.isSticky}>
-        <NavLinks>
-          <Home href="#home">Home</Home>
-          <About href="#about">About</About>
-          <Projects href="#projects">Projects</Projects>
-          <Contact href="#contact">Contact</Contact>
-        </NavLinks>
-        <BurgerContainer>
-          <NavBurger open={open} setOpen={setOpen} />
-        </BurgerContainer>
-      </NavContainer>
-    </NavWrapper>
+    <Fragment>
+
+      <NavWrapper open={open}>
+        <NavContainer isSticky={props.isSticky}>
+          <NavLinks>
+            <Home href="#home">Home</Home>
+            <About href="#about">About</About>
+            <Projects href="#projects">Projects</Projects>
+            <Contact href="#contact">Contact</Contact>
+          </NavLinks>
+          <BurgerContainer>
+            <NavBurger open={open} setOpen={setOpen} />
+            <VerticalNavMenu open={open} />
+          </BurgerContainer>
+        </NavContainer>
+      </NavWrapper>
+    </Fragment>
   );
 };
 
