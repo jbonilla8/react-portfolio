@@ -1,6 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { device } from '../shared/styles';
+import Modal from './Modal'
+import TetrisThumbnail from '../images/thumbnails/tetris.png';
+import SweetBeatsThumbnail from '../images/thumbnails/sweetbeats.png';
 import MovieFinderThumbnail from '../images/thumbnails/movieFinder.png';
 import CalendarAppThumbnail from '../images/thumbnails/calendarApp.png';
 import QuestOverlandThumbnail from '../images/thumbnails/questOverland.png';
@@ -9,6 +12,8 @@ import GranolaThumbnail from '../images/thumbnails/granola.png';
 import SugarPopThumbnail from '../images/thumbnails/sugarPop.png';
 
 const Projects = () => {
+  const [showDetails, setShowDetails] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <ProjectsWrapper id="projects">
@@ -19,14 +24,26 @@ const Projects = () => {
       </Filters>
       <TilesContainer>
         <Tile>
-          <img src={MovieFinderThumbnail} alt="thumbnail of MovieFinder project" />
-          {/* <DetailsContainer>
-            <p>some text here</p>
-            <button>LEARN MORE</button>
-          </DetailsContainer> */}
+          <img src={TetrisThumbnail} alt="thumbnail of React tetris game project" />
         </Tile>
         <Tile>
+          <img src={SweetBeatsThumbnail} alt="thumbnail of sweet beats React website" />
+        </Tile>
+        <Tile onClick={() => setShowDetails(!showDetails)}>
+          <img src={MovieFinderThumbnail} alt="thumbnail of MovieFinder project" />
+          <DetailsContainer showDetails={showDetails}>
+            <h2>Movie Finder</h2>
+            <p>React / Styled Components / Node.js</p>
+            <button onClick={setShowModal}>LEARN MORE</button>
+          </DetailsContainer>
+        </Tile>
+        <Tile onClick={() => setShowDetails(!showDetails)}>
           <img src={CalendarAppThumbnail} alt="thumbnail of eCalendar project" />
+          <DetailsContainer showDetails={showDetails}>
+            <h2>eCalendar</h2>
+            <p>React / Styled Components</p>
+            <button onClick={setShowModal}>LEARN MORE</button>
+          </DetailsContainer>
         </Tile>
         <Tile>
           <img src={QuestOverlandThumbnail} alt="thumbnail of Quest Overland design project" />
@@ -41,6 +58,7 @@ const Projects = () => {
           <img src={SugarPopThumbnail} alt="thumbnail of Sugar Pop Bakery design project" />
         </Tile>
       </TilesContainer>
+      <Modal showModal={showModal} />
     </ProjectsWrapper>
   )
 };
@@ -71,7 +89,8 @@ const Filters = styled.div`
 
     &:focus, &:active {
       color: white;
-      background-color: #3c748e;
+      // background-color: #3c748e;
+      background-color: #369ccc;
     }
 
     @media (max-width: ${device.mobileL}) {
@@ -108,17 +127,25 @@ const Tile = styled.div`
   }
 `;
 
-// const DetailsContainer = styled.div`
-//   position: absolute;
-//   color: black;
-//   text-align: center;
-//   width: 100%;
-//   height: 100%;
-//   margin: auto;
-//   z-index: 100;
+const DetailsContainer = styled.div`
+  position: absolute;
+  color: black;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  z-index: 100;
+  display: ${props => (props.showDetails ? 'block' : 'none')};
+  background-color: rgba(255, 255, 255, 0.9);
 
-//   &:hover {
-//     display: block;
-//     background-color: rgba(255, 255, 255, 0.9);
-//   }
-// `;
+  h2 {
+    padding-top: 100px;
+  }
+
+  button {
+    cursor: pointer;
+    border: 2px solid black;
+    padding: 10px 20px;
+    outline: none;
+  }
+`;
