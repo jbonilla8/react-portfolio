@@ -1,0 +1,60 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "tetris",
+            "type": "react",
+            "thumbnailImg": "/images/thumbnails/tetris.png",
+            "description": "thumbnail of React tetris game project"
+        },
+        {
+            "id": 2,
+            "title": "sweetbeats",
+            "type": "react",
+            "thumbnailImg": "/images/thumbnails/sweetbeats.png",
+            "description": "thumbnail of sweet beats React website"
+        },
+        {
+            "id": 3,
+            "title": "moviefinder",
+            "type": "react",
+            "thumbnailImg": "/images/thumbnails/movieFinder.png",
+            "description": "thumbnail of MovieFinder project"
+        },
+        {
+            "id": 4,
+            "title": "calendar",
+            "type": "react",
+            "thumbnailImg": "/images/thumbnails/calendarApp.png",
+            "description": "thumbnail of eCalendar project"
+        },
+        {
+            "id": 5,
+            "title": "questoverland",
+            "type": "design",
+            "thumbnailImg": "/images/thumbnails/questOverland.png",
+            "description": "thumbnail of Quest Overland design project"
+        },
+        {
+            "id": 6,
+            "title": "mqual",
+            "type": "design",
+            "thumbnailImg": "/images/thumbnails/mqual.png",
+            "description": "thumbnail of Mqual design project"
+        },
+        {
+            "id": 7,
+            "title": "granola",
+            "type": "design",
+            "thumbnailImg": "/images/thumbnails/granola.png",
+            "description": "thumbnail of Peace Lovin' Granola project"
+        },
+        {
+            "id": 8,
+            "title": "sugarpop",
+            "type": "design",
+            "thumbnailImg": "/images/thumbnails/sugarPop.png",
+            "description": "thumbnail of Sugar Pop Bakery design project"
+        }
+    ]
+}

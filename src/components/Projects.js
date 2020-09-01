@@ -1,19 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { device } from '../shared/styles';
-import Modal from './Modal'
-import TetrisThumbnail from '../images/thumbnails/tetris.png';
-import SweetBeatsThumbnail from '../images/thumbnails/sweetbeats.png';
-import MovieFinderThumbnail from '../images/thumbnails/movieFinder.png';
-import CalendarAppThumbnail from '../images/thumbnails/calendarApp.png';
-import QuestOverlandThumbnail from '../images/thumbnails/questOverland.png';
-import MqualThumbnail from '../images/thumbnails/mqual.png';
-import GranolaThumbnail from '../images/thumbnails/granola.png';
-import SugarPopThumbnail from '../images/thumbnails/sugarPop.png';
+import Modal from './Modal';
+// import TetrisThumbnail from '../images/thumbnails/tetris.png';
+// import SweetBeatsThumbnail from '../images/thumbnails/sweetbeats.png';
+// import MovieFinderThumbnail from '../images/thumbnails/movieFinder.png';
+// import CalendarAppThumbnail from '../images/thumbnails/calendarApp.png';
+// import QuestOverlandThumbnail from '../images/thumbnails/questOverland.png';
+// import MqualThumbnail from '../images/thumbnails/mqual.png';
+// import GranolaThumbnail from '../images/thumbnails/granola.png';
+// import SugarPopThumbnail from '../images/thumbnails/sugarPop.png';
 
 const Projects = () => {
+  const [projects, setProjects] = useState([]);
   const [showDetails, setShowDetails] = useState(false);
   const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    fetch('http://localhost:5000/projects')
+      .then(res => res.json())
+      .then(data => setProjects(data));
+  }, []);
+
+  if (projects.length == 0) return false;
 
   return (
     <ProjectsWrapper id="projects">
@@ -23,12 +32,13 @@ const Projects = () => {
         <button>DESIGNS</button>
       </Filters>
       <TilesContainer>
-        <Tile>
-          <img src={TetrisThumbnail} alt="thumbnail of React tetris game project" />
+      {projects.map(project => (
+        <Tile key={project.id}>
+          <img src={`${project.thumbnailImg}`} alt={project.description} />
         </Tile>
-        <Tile>
-          <img src={SweetBeatsThumbnail} alt="thumbnail of sweet beats React website" />
-        </Tile>
+      ))}
+        {/* 
+        
         <Tile onClick={() => setShowDetails(!showDetails)}>
           <img src={MovieFinderThumbnail} alt="thumbnail of MovieFinder project" />
           <DetailsContainer showDetails={showDetails}>
@@ -45,18 +55,7 @@ const Projects = () => {
             <button onClick={setShowModal}>LEARN MORE</button>
           </DetailsContainer>
         </Tile>
-        <Tile>
-          <img src={QuestOverlandThumbnail} alt="thumbnail of Quest Overland design project" />
-        </Tile>
-        <Tile>
-          <img src={MqualThumbnail} alt="thumbnail of Mqual design project" />
-        </Tile>
-        <Tile>
-          <img src={GranolaThumbnail} alt="thumbnail of Peace Lovin' Granola project" />
-        </Tile>
-        <Tile>
-          <img src={SugarPopThumbnail} alt="thumbnail of Sugar Pop Bakery design project" />
-        </Tile>
+         */}
       </TilesContainer>
       <Modal showModal={showModal} />
     </ProjectsWrapper>
