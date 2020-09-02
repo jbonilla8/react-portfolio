@@ -1,8 +1,11 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, Fragment } from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import About from './components/About';
+import Stack from './components/Stack';
 import Projects from './components/Projects';
+import ProjectDetails from './components/ProjectDetails';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -29,14 +32,18 @@ function App() {
   }, [heroParentRef, isSticky]);
 
   return (
-    <div>
+    <Fragment>
       <Hero heroOuterContainerRef={heroParentRef} />
       <Navbar isSticky={isSticky} />
       <About />
+      <Stack />
       <Projects />
+      <BrowserRouter>
+        <Route path="/projectDetails/:id" component={ProjectDetails} />
+      </BrowserRouter>
       <Contact />
       <Footer />
-    </div>
+    </Fragment>
   );
 }
 

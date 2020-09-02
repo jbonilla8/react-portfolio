@@ -14,7 +14,7 @@
     "styled-components": "^5.1.1"
   },
   "scripts": {
-    "start": "NODE_PATH=src react-scripts start | json-server --watch db.json --port 5000",
+    "start": "react-scripts start | json-server --watch db.json --port 5000",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -33,5 +33,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://localhost:8080"
 }

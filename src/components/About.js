@@ -2,19 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { device } from '../shared/styles';
 
-import ReactIcon from '../images/icons/tech/react2.png';
-import JavaScriptIcon from '../images/icons/tech/javascript.png';
-import JQueryIcon from '../images/icons/tech/jquery.png';
-import HTML5Icon from '../images/icons/tech/html5.png';
-import CSS3Icon from '../images/icons/tech/css3.png';
-import SassIcon from '../images/icons/tech/sass.png';
-import StyledCompIcon from '../images/icons/tech/styled2.png';
-import GitIcon from '../images/icons/tech/git.png';
-import BootstrapIcon from '../images/icons/tech/bootstrap.png';
-import CsharpIcon from '../images/icons/tech/csharp.png';
-import PhotoshopIcon from '../images/icons/tech/photoshop.png';
-import FigmaIcon from '../images/icons/tech/figma.png';
-
 const About = () => (
   <AboutWrapper id="about">
     <Text>
@@ -27,20 +14,6 @@ const About = () => (
         <P2>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut auctor enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus egestas felis a tortor vulputate suscipit. I am constantly expanding my knowledge of web related technologies and design. Below are some I have worked with:
         </P2>
-        <TechIconsContainer>
-          <ReactImg src={ReactIcon} alt="image of React framework icon" />
-          <JavaScriptImg src={JavaScriptIcon} alt="image of JavaScript language icon" />
-          <JQueryImg src={JQueryIcon} alt="image of JQuery library icon" />
-          <HTML5Img src={HTML5Icon} alt="image of HTML5 language icon" />
-          <CSS3Img src={CSS3Icon} alt="image of CSS3 language icon" />
-          <SassImg src={SassIcon} alt="image of Sass preprocessor scripting language icon" />
-          <StyledCompImg src={StyledCompIcon} alt="image of Styled Components icon" />
-          <GitImg src={GitIcon} alt="image of Git icon" />
-          <BootstrapImg src={BootstrapIcon} alt="image of Bootstrap icon" />
-          <CsharpImg src={CsharpIcon} alt="image of C# language icon" />
-          <PhotoshopImg src={PhotoshopIcon} alt="image of Photoshop icon" />
-          <FigmaImg src={FigmaIcon} alt="image of Figma icon" />
-        </TechIconsContainer>
       </AboutContainer>
     </Text>
   </AboutWrapper>
@@ -50,11 +23,11 @@ export default About;
 
 const AboutWrapper = styled.div`
   display: grid;
-  grid-template-columns: 10% 80% 10%;
+  grid-template-columns: 5% 90% 5%;
   grid-template-rows: auto;
   background-color: #ededed;
-  padding: 100px 0;
-  border-bottom: 1px solid black;
+  padding-top: 100px;
+  padding-bottom: 20px;
 
   @media (max-width: ${device.mobileL}) {
     padding: 50px 0;
@@ -68,7 +41,7 @@ const Text = styled.div`
   line-height: 2.2rem;
 
   @media (max-width: ${device.tabletL}) {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 `;
 
@@ -97,73 +70,3 @@ const P2 = styled.p`
     grid-row: 2/3;
   }
 `;
-
-const TechIconsContainer = styled.div`
-  grid-column: 1/span 3;
-  grid-row: 3/4;
-  justify-self: center;
-
-  @media (max-width: ${device.tabletL}) {
-    grid-column: 1/span 3;
-    grid-row: 4/5;
-  }
-`;
-
-const ReactImg = styled.img`
-  width: 105px;
-`;
-
-const JavaScriptImg = styled.img`
-  width: 67px;
-  margin-right: 20px;
-`;
-
-const JQueryImg = styled.img`
-  width: 175px;
-  margin-right: 20px;
-`;
-
-const HTML5Img = styled.img`
-  width: 72px;
-  margin-right: 20px;
-`;
-
-const CSS3Img = styled.img`
-  width: 51px;
-  margin-right: 20px;
-`;
-
-const SassImg = styled.img`
-  width: 89px;
-  margin-right: 20px;
-`;
-
-const StyledCompImg = styled.img`
-  width: 75px;
-  margin-right: 20px;
-`;
-
-const GitImg = styled.img`
-  width: 100px;
-  margin-right: 20px;
-`;
-
-const BootstrapImg = styled.img`
-  width: 72px;
-  margin-right: 20px;
-`;
-
-const CsharpImg = styled.img`
-  width: 72px;
-  margin-right: 20px;
-`;
-
-const PhotoshopImg = styled.img`
-  width: 72px;
-  margin-right: 20px;
-`;
-
-const FigmaImg = styled.img`
-  width: 45px;
-`;
-

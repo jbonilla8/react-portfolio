@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { device } from '../shared/styles';
 
@@ -22,9 +23,11 @@ const Projects = () => {
       </Filters>
       <TilesContainer>
         {projects.map(project => (
-          <Tile key={project.id}>
-            <img src={`${project.thumbnailImg}`} alt={project.alt} />
-          </Tile>
+          <Link to={`/projectDetails/${project.id}`}>
+            <Tile key={project.id}>
+              <img src={`${project.thumbnailImg}`} alt={project.alt} />
+            </Tile>
+          </Link>
         ))}
       </TilesContainer>
     </ProjectsWrapper>
@@ -57,8 +60,7 @@ const Filters = styled.div`
 
     &:focus, &:active {
       color: white;
-      // background-color: #3c748e;
-      background-color: #369ccc;
+      background-color: #3c748e;
     }
 
     @media (max-width: ${device.mobileL}) {
