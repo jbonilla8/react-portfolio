@@ -12,7 +12,7 @@ const About = () => (
             Florida. I am really diggin the sunshine state! Vivamus egestas felis a tortor vulputate suscipit. Pellentesque at libero nec odio condimentum ultrices. Interdum et malesuada fames ac ante ipsum primis in faucibus.
         </P1>
         <P2>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut auctor enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus egestas felis a tortor vulputate suscipit. I am constantly expanding my knowledge of web related technologies and design. Below are some I have worked with:
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut auctor enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus egestas felis a tortor vulputate suscipit. I am constantly expanding my knowledge of web related technologies and design. <span>Below are some frameworks, languages, and tools I have worked with:</span>
         </P2>
       </AboutContainer>
     </Text>
@@ -28,10 +28,6 @@ const AboutWrapper = styled.div`
   background-color: #ededed;
   padding-top: 100px;
   padding-bottom: 20px;
-
-  @media (max-width: ${device.mobileL}) {
-    padding: 50px 0;
-  }
 `;
 
 const Text = styled.div`
@@ -68,5 +64,9 @@ const P2 = styled.p`
   @media (max-width: ${device.tabletL}) {
     grid-column: 1/span 2;
     grid-row: 2/3;
+  }
+
+  span {
+    font-weight: 700;
   }
 `;

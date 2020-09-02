@@ -54,10 +54,12 @@ display: grid;
 max-width: 100vw;
 margin: 0 1rem;
 grid-gap: 1rem;
-justify-content: center;
+align-items: center;
 justify-items: center;
 
 grid-template-columns: repeat(2, 1fr); 
+row-gap: 50px;
+column-gap: normal;
 
 @media (min-width: 600px) {
   grid-template-columns: repeat(4, 1fr); 
@@ -69,7 +71,7 @@ grid-template-columns: repeat(2, 1fr);
 `;
 
 const ReactImg = styled.img`
-  width: 105px;
+  width: 115px;
 `;
 
 const JavaScriptImg = styled.img`
@@ -78,7 +80,7 @@ const JavaScriptImg = styled.img`
 `;
 
 const JQueryImg = styled.img`
-  width: 175px;
+  width: 160px;
   margin-right: 20px;
 `;
 
