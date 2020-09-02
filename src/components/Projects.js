@@ -1,19 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { device } from '../shared/styles';
-import Modal from './Modal';
-// import TetrisThumbnail from '../images/thumbnails/tetris.png';
-// import SweetBeatsThumbnail from '../images/thumbnails/sweetbeats.png';
-// import MovieFinderThumbnail from '../images/thumbnails/movieFinder.png';
-// import CalendarAppThumbnail from '../images/thumbnails/calendarApp.png';
-// import QuestOverlandThumbnail from '../images/thumbnails/questOverland.png';
-// import MqualThumbnail from '../images/thumbnails/mqual.png';
-// import GranolaThumbnail from '../images/thumbnails/granola.png';
-// import SugarPopThumbnail from '../images/thumbnails/sugarPop.png';
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
-  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     fetch('http://localhost:5000/projects')
@@ -32,12 +22,11 @@ const Projects = () => {
       </Filters>
       <TilesContainer>
         {projects.map(project => (
-          <Tile key={project.id} onClick={() => setShowModal(!showModal)}>
+          <Tile key={project.id}>
             <img src={`${project.thumbnailImg}`} alt={project.alt} />
           </Tile>
         ))}
       </TilesContainer>
-      <Modal showModal={showModal} />
     </ProjectsWrapper>
   )
 };
