@@ -13,7 +13,6 @@ import Modal from './Modal';
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
-  const [showDetails, setShowDetails] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
@@ -33,8 +32,8 @@ const Projects = () => {
       </Filters>
       <TilesContainer>
       {projects.map(project => (
-        <Tile key={project.id}>
-          <img src={`${project.thumbnailImg}`} alt={project.description} />
+        <Tile key={project.id} onClick={() => setShowModal(!showModal)}>
+          <img src={`${project.thumbnailImg}`} alt={project.alt} />
         </Tile>
       ))}
         {/* 
