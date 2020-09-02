@@ -31,30 +31,11 @@ const Projects = () => {
         <button>DESIGNS</button>
       </Filters>
       <TilesContainer>
-      {projects.map(project => (
-        <Tile key={project.id} onClick={() => setShowModal(!showModal)}>
-          <img src={`${project.thumbnailImg}`} alt={project.alt} />
-        </Tile>
-      ))}
-        {/* 
-        
-        <Tile onClick={() => setShowDetails(!showDetails)}>
-          <img src={MovieFinderThumbnail} alt="thumbnail of MovieFinder project" />
-          <DetailsContainer showDetails={showDetails}>
-            <h2>Movie Finder</h2>
-            <p>React / Styled Components / Node.js</p>
-            <button onClick={setShowModal}>LEARN MORE</button>
-          </DetailsContainer>
-        </Tile>
-        <Tile onClick={() => setShowDetails(!showDetails)}>
-          <img src={CalendarAppThumbnail} alt="thumbnail of eCalendar project" />
-          <DetailsContainer showDetails={showDetails}>
-            <h2>eCalendar</h2>
-            <p>React / Styled Components</p>
-            <button onClick={setShowModal}>LEARN MORE</button>
-          </DetailsContainer>
-        </Tile>
-         */}
+        {projects.map(project => (
+          <Tile key={project.id} onClick={() => setShowModal(!showModal)}>
+            <img src={`${project.thumbnailImg}`} alt={project.alt} />
+          </Tile>
+        ))}
       </TilesContainer>
       <Modal showModal={showModal} />
     </ProjectsWrapper>
@@ -122,28 +103,5 @@ const Tile = styled.div`
 
   img {
     width: 100%;
-  }
-`;
-
-const DetailsContainer = styled.div`
-  position: absolute;
-  color: black;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  z-index: 100;
-  display: ${props => (props.showDetails ? 'block' : 'none')};
-  background-color: rgba(255, 255, 255, 0.9);
-
-  h2 {
-    padding-top: 100px;
-  }
-
-  button {
-    cursor: pointer;
-    border: 2px solid black;
-    padding: 10px 20px;
-    outline: none;
   }
 `;
