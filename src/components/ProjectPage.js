@@ -34,9 +34,13 @@ const ProjectPage = () => {
                 </Summary>
                 {project.type === 'react' ? <img src={`${project.thumbnailImg}`} alt={project.alt} /> : <img src={`${project.mockup}`} alt={project.mockupAlt} />}
 
-                {project.type === 'react' ? <SiteButton>View Live Site</SiteButton> : null}
+                {project.hasLiveSite ? <a href={project.siteAddress}>
+                    <SiteButton>View Live Site</SiteButton>
+                </a> : null}
             </Main>
         </ProjectPageWrapper>
+
+
 
     )
 }
@@ -76,6 +80,11 @@ const Main = styled.div`
         margin-bottom: 50px;
         max-width: 80vw;
         border: 4px solid black;
+        justify-self: center;
+    }
+
+    a {
+        justify-self: center;
     }
 
     @media (min-width: ${device.mobileL}) {
@@ -107,11 +116,11 @@ const Summary = styled.div`
 `;
 
 const SiteButton = styled.button`
+    cursor: pointer;
     outline: none;
     width: 220px;
     height: 60px;
     border: none;
-    justify-self: center;
     background-color: #9C27B0;
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
