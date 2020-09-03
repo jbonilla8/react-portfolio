@@ -7,9 +7,9 @@ const Projects = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/projects')
+    fetch('/db.json')
       .then(res => res.json())
-      .then(data => setProjects(data));
+      .then(data => setProjects(data.projects));
   }, []);
 
   if (projects.length == 0) return false;
@@ -23,7 +23,7 @@ const Projects = () => {
       </Filters>
       <TilesContainer>
         {projects.map(project => (
-          <Link to={`/projectDetails/${project.id}`}>
+          <Link to={`/project/${project.id}`}>
             <Tile key={project.id}>
               <img src={`${project.thumbnailImg}`} alt={project.alt} />
             </Tile>
@@ -44,6 +44,7 @@ const Filters = styled.div`
   color: black;
   padding-top: 50px;
   padding-bottom: 25px;
+  margin: 0 1rem;
   justify-content: space-around;
 
   button {
@@ -52,7 +53,7 @@ const Filters = styled.div`
     color: black;
     border: none;
     border-radius: 0px;
-    padding: 15px 30px;
+    padding: 20px 40px;
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: 0.2rem;
@@ -64,8 +65,8 @@ const Filters = styled.div`
     }
 
     @media (max-width: ${device.mobileL}) {
-      font-size: 0.8rem;
-      padding: 10px 25px;
+      font-size: 0.9rem;
+      padding: 15px;
     }
   }
 `;
