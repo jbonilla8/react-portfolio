@@ -32,7 +32,8 @@ const ProjectPage = () => {
                 <Summary>
                     {project.summary}
                 </Summary>
-                <img src={`${project.thumbnailImg}`} alt={project.alt} />
+                {project.type === 'react' ? <img src={`${project.thumbnailImg}`} alt={project.alt} /> : <img src={`${project.mockup}`} alt={project.mockupAlt} />}
+
                 {project.type === 'react' ? <SiteButton>View Live Site</SiteButton> : null}
             </Main>
         </ProjectPageWrapper>
@@ -73,6 +74,8 @@ const Main = styled.div`
 
     img {
         margin-bottom: 50px;
+        max-width: 80vw;
+        border: 4px solid black;
     }
 
     @media (min-width: ${device.mobileL}) {

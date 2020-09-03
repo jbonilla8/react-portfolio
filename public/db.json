@@ -6,6 +6,7 @@
             "title": "Tetris",
             "description": "React Application",
             "thumbnailImg": "/images/thumbnails/tetris.png",
+            "mockup": "",
             "alt": "thumbnail of React tetris game project",
             "summary": "A personal rendition of the classic tetris game originally developed by Alexey Pajitnov."
         },
@@ -15,6 +16,7 @@
             "title": "Sweet Beats",
             "description": "React Application",
             "thumbnailImg": "/images/thumbnails/sweetbeats.png",
+            "mockup": "",
             "alt": "thumbnail of sweet beats React website",
             "summary": "A playlist creator application that uses the Spotify Web API and OAuth 2.0 API. The app allows the user to creator playlists based on bpm, danceability, energy, instrumentalness, and valence (musical positiveness). Users can enjoy a 30 second preview of songs in each playlist and save them to the user's Spotify account for later enjoyment. Myself and three other developers created this application for a Chingu cohort group project during a six week span."
         },
@@ -24,6 +26,7 @@
             "title": "Movie Finder",
             "description": "React Application",
             "thumbnailImg": "/images/thumbnails/movieFinder.png",
+            "mockup": "",
             "alt": "thumbnail of MovieFinder project",
             "summary": "An imdb clone application created by myself and a team of 3 other developers for a six week Chingu group project. It has been built with the React JavaScript framework. It features a search bar to look for a film, a sign up form to create a new account, and a sign in link that opens a modal to enter a username and password. Clicking on a movie card image takes the user to a page with more details about the selected movie. The plus sign adds the movie to a watchlist where it is stored in a firebase database and is displayed under the My Watchlist tab."
         },
@@ -33,6 +36,7 @@
             "title": "eCalendar",
             "description": "React Application",
             "thumbnailImg": "/images/thumbnails/calendarApp.png",
+            "mockup": "",
             "alt": "thumbnail of eCalendar project",
             "summary": "A Front End only React calendar application. The background image for the events panel change with the seasons as you switch months with the left and right arrows. The data and month on the panel change as you select them from the calendar. A sign in modal displays for the sign in button and an Add Event form displays when you click on the plus icon."
         },
@@ -43,6 +47,8 @@
             "description": "Design Mockup",
             "thumbnailImg": "/images/thumbnails/questOverland.png",
             "alt": "thumbnail of Quest Overland design project",
+            "mockup": "/images/mockups/quest.jpg",
+            "mockupAlt": "Quest Overland project design mockup",
             "summary": "An unofficial redesign mockup for Quest Overland. Discovered the prompt via 99designs."
         },
         {
@@ -52,6 +58,8 @@
             "description": "Design Mockup",
             "thumbnailImg": "/images/thumbnails/mqual.png",
             "alt": "thumbnail of Mqual design project",
+            "mockup": "/images/mockups/mqual.jpg",
+            "mockupAlt": "Mqual design project mockup",
             "summary": "An unofficial redesign mockup for Mqual. Discovered the prompt via 99designs."
         },
         {
@@ -61,6 +69,8 @@
             "description": "Design Mockup",
             "thumbnailImg": "/images/thumbnails/granola.png",
             "alt": "thumbnail of Peace Lovin' Granola project",
+            "mockup": "/images/mockups/peace.jpg",
+            "mockupAlt": "Peace Lovin' Granola design project mockup",
             "summary": "An unofficial redesign mockup for Peace Lovin' Granola. Discovered the prompt via 99designs."
         },
         {
@@ -70,6 +80,8 @@
             "description": "Design Mockup",
             "thumbnailImg": "/images/thumbnails/sugarPop.png",
             "alt": "thumbnail of Sugar Pop Bakery design project",
+            "mockup": "/images/mockups/sugarpop.jpg",
+            "mockupAlt": "Sugar Pop Bakery design project mockup",
             "summary": "A design mockup created with Photoshop for a fictitious bakery business."
         }
     ]
