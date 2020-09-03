@@ -61,7 +61,7 @@ const Filters = styled.div`
 
     &:focus, &:active {
       color: white;
-      background-color: #3c748e;
+      background-color: #00BCD4;
     }
 
     @media (max-width: ${device.mobileL}) {

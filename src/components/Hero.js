@@ -62,7 +62,8 @@ const HeroText = styled.div`
 const HeroButton = styled.button`
   color: white;
   cursor: pointer;
-  background-color: #902A64;
+  background-color: #8c04a4;
+
   margin-top: 2rem;
   border: none;
   border-radius: 0px;
@@ -71,7 +72,7 @@ const HeroButton = styled.button`
   font-size: 1.2rem;
 
   &:hover {
-    background-color: #0F5257;
+    background-color: #9C27B0;
   }
 `;
 
