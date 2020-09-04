@@ -33,7 +33,7 @@ const ProjectPage = () => {
                 </Summary>
                 {project.type === 'react' ? <img src={`${project.thumbnailImg}`} alt={project.alt} /> : <img src={`${project.mockup}`} alt={project.mockupAlt} />}
 
-                {project.hasLiveSite ? <a href={project.siteAddress}>
+                {project.hasLiveSite ? <a href={project.siteAddress} target="_blank">
                     <SiteButton>View Live Site</SiteButton>
                 </a> : null}
             </Main>
