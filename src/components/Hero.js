@@ -67,12 +67,19 @@ const HeroButton = styled.button`
   border: none;
   border-radius: 0px;
   outline: none;
-  padding: 15px 30px;
+  width: 220px;
+  height: 60px;
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
 
   &:hover {
     background-color: #8c04a4;
+  }
+
+  @media (max-width: ${device.mobileL}) {
+    width: 180px;
+    height: 50px;
+    font-size: 1.1rem;
   }
 `;
 
