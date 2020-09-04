@@ -5,6 +5,8 @@ import { device } from '../shared/styles';
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
+  const buttonTypes = ["ALL", "REACT-JS", "DESIGN"];
+  const [active, setActive] = useState(buttonTypes[0]);
 
   useEffect(() => {
     fetch('/db.json')
@@ -17,9 +19,11 @@ const Projects = () => {
   return (
     <ProjectsWrapper id="projects">
       <Filters>
-        <button>ALL</button>
-        <button>REACT-JS</button>
-        <button>DESIGNS</button>
+        {buttonTypes.map(type => (
+          <ToggleButton active={active === type} onClick={() => setActive(type)}>
+            {type}
+          </ToggleButton>
+        ))}
       </Filters>
       <TilesContainer>
         {projects.map(project => (
@@ -46,28 +50,23 @@ const Filters = styled.div`
   padding-bottom: 25px;
   margin: 0 1rem;
   justify-content: space-around;
+`;
 
-  button {
-    cursor: pointer;
-    background-color: white;
-    color: black;
-    border: none;
-    border-radius: 0px;
-    padding: 20px 40px;
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 0.2rem;
-    outline: none;
+const ToggleButton = styled.button`
+  cursor: pointer;
+  border: none;
+  border-radius: 0px;
+  padding: 20px 40px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  outline: none;
+  color: ${props => (props.active ? 'white' : 'black')};
+  background-color: ${props => (props.active ? '#00BCD4' : 'white')};
 
-    &:focus, &:active {
-      color: white;
-      background-color: #00BCD4;
-    }
-
-    @media (max-width: ${device.mobileL}) {
-      font-size: 0.9rem;
-      padding: 15px;
-    }
+  @media (max-width: ${device.mobileL}) {
+    font-size: 0.9rem;
+    padding: 15px;
   }
 `;
 

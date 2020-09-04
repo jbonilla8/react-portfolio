@@ -62,17 +62,17 @@ const HeroText = styled.div`
 const HeroButton = styled.button`
   color: white;
   cursor: pointer;
-  background-color: #8c04a4;
-
+  background-color: #9C27B0;
   margin-top: 2rem;
   border: none;
   border-radius: 0px;
   outline: none;
-  padding: 12px 24px;
+  padding: 15px 30px;
   font-size: 1.2rem;
+  letter-spacing: 0.1rem;
 
   &:hover {
-    background-color: #9C27B0;
+    background-color: #8c04a4;
   }
 `;
 

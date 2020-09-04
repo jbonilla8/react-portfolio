@@ -21,7 +21,6 @@ const ProjectPage = () => {
     }
     return (
         // add link to github for projects with repos
-        // resize images (add full mockup images for design projects)
 
         <ProjectPageWrapper>
             <Header>
