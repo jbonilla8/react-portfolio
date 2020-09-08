@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import { Route } from 'react-router-dom';
 import ProjectPage from './components/ProjectPage';
 import HomePage from './components/HomePage';

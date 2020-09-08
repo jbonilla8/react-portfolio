@@ -21,7 +21,6 @@ const ProjectPage = () => {
     }
     return (
         // add link to github for projects with repos
-
         <ProjectPageWrapper>
             <Header>
                 <Title>{project.title}</Title>
@@ -33,14 +32,11 @@ const ProjectPage = () => {
                 </Summary>
                 {project.type === 'react' ? <img src={`${project.thumbnailImg}`} alt={project.alt} /> : <img src={`${project.mockup}`} alt={project.mockupAlt} />}
 
-                {project.hasLiveSite ? <a href={project.siteAddress} target="_blank">
+                {project.hasLiveSite ? <a href={project.siteAddress} target="_blank" rel="noopener">
                     <SiteButton>View Live Site</SiteButton>
                 </a> : null}
             </Main>
         </ProjectPageWrapper>
-
-
-
     )
 }
 
