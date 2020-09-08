@@ -116,12 +116,12 @@ const SiteButton = styled.button`
     width: 220px;
     height: 60px;
     border: none;
-    background-color: #9C27B0;
+    background-color: #A72592;
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
     color: white;
 
     &:hover {
-        background-color: #8c04a4;
+        background-color: #972183;
     }
 `;

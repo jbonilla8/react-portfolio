@@ -62,7 +62,7 @@ const HeroText = styled.div`
 const HeroButton = styled.button`
   color: white;
   cursor: pointer;
-  background-color: #9C27B0;
+  background-color: #A72592;
   margin-top: 2rem;
   border: none;
   border-radius: 0px;
@@ -73,7 +73,7 @@ const HeroButton = styled.button`
   letter-spacing: 0.1rem;
 
   &:hover {
-    background-color: #8c04a4;
+    background-color: #972183;
   }
 
   @media (max-width: ${device.mobileL}) {
