@@ -53,6 +53,7 @@ const HeroText = styled.div`
   font-size: 1.6rem;
   margin-top: 2rem;
   letter-spacing: 0.1rem;
+  line-height: 2.2rem;
 
   @media (max-width: ${device.tabletL}) {
     font-size: 1.4rem;
