@@ -62,7 +62,7 @@ const NavLinks = styled.div`
     letter-spacing: 0.1em;
 
     &:hover {
-      color: #FA4C98;
+      color: #a72592;
     }
   }
 

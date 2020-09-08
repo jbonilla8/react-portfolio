@@ -53,7 +53,7 @@ const ContactContainer = styled.div`
   a {
     text-decoration: none;
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: black;
 
     &:hover {
@@ -89,6 +89,11 @@ const PhoneImg = styled.img`
 const PhoneLink = styled.a`
   grid-column: 1/2;
   grid-row: 2/3;
+  margin-bottom: 2rem;
+
+  @media (min-width: ${device.tabletL}) {
+    margin-bottom: 0;
+  }
 `;
 
 const EmailImg = styled.img`
@@ -109,10 +114,12 @@ const EmailImg = styled.img`
 const EmailLink = styled.a`
   grid-column: 1/2;
   grid-row: 4/5;
+  margin-bottom: 2rem;
 
   @media (min-width: ${device.tabletL}) {
     grid-column: 2/3;
     grid-row: 2/3;
+    margin-bottom: 0;
   }
 `;
 
@@ -134,9 +141,11 @@ const GitHubImg = styled.img`
 const GitHubLink = styled.a`
   grid-column: 1/2;
   grid-row: 6/7;
+  margin-bottom: 2rem;
 
   @media (min-width: ${device.tabletL}) {
     grid-column: 3/4;
     grid-row: 2/3;
+    margin-bottom: 0;
   }
 `;
