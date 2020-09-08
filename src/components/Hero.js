@@ -13,7 +13,7 @@ const Hero = (props) => (
           Hi, my name is Jalisa. I'm a Front End Web Developer & Designer.
         </HeroText>
         <a href="#projects">
-          <HeroButton>See My Work</HeroButton>
+          <HeroButton aria-label="See My Work">See My Work</HeroButton>
         </a>
       </LeftPanel>
       <RightPanel>
