@@ -120,6 +120,7 @@ const SiteButton = styled.button`
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
     color: white;
+    font-weight: 700;
 
     &:hover {
         background-color: #972183;

@@ -68,10 +68,11 @@ const HeroButton = styled.button`
   border: none;
   border-radius: 0px;
   outline: none;
-  width: 220px;
+  width: 200px;
   height: 60px;
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
+  font-weight: 700;
 
   &:hover {
     background-color: #972183;
