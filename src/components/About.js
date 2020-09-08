@@ -7,10 +7,10 @@ const About = () => (
     <Text>
       <AboutContainer>
         <P1>
-          From the design to coding stage, I create websites that offer responsive and intuitive user experiences. My professional background includes contributing to the development of banking software and marketing websites. I am constantly expanding my knowledge of web related technologies and design. <span>Below are some frameworks, languages, and tools I have worked with:</span>
+          From the design to coding stage, I create websites that offer responsive and intuitive user experiences. My professional background includes developing banking software and marketing websites. 
         </P1>
         <P2>
-          I am originally from Nebraska but have just recently moved to Florida. I am loving the sunshine state! In my spare time I love to read novels, go on nature hikes, and practice photography.
+          I am constantly expanding my knowledge of web related technologies and design. <span> Below are some frameworks, languages, and tools I have worked with:</span>
         </P2>
       </AboutContainer>
     </Text>
@@ -32,7 +32,7 @@ const Text = styled.div`
   grid-column: 2/3;
   font-weight: 400;
   font-size: 1.3rem;
-  line-height: 2.2rem;
+  line-height: 2.5rem;
 
   span {
     font-weight: 700;
