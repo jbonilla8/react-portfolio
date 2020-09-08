@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const NavBurger = ({ open, setOpen }) => {
   return (
-    <NavBurgerButton open={open} onClick={() => setOpen(!open)}>
+    <NavBurgerButton open={open} onClick={() => setOpen(!open)} aria-label="open navigation menu">
       <div></div>
       <div></div>
       <div></div>
