@@ -72,7 +72,7 @@ const HeroButton = styled.button`
   height: 60px;
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
-  font-weight: 700;
+  font-weight: 400;
 
   &:hover {
     background-color: #972183;

@@ -32,8 +32,8 @@ const ProjectPage = () => {
                 </Summary>
                 {project.type === 'react' ? <img src={`${project.thumbnailImg}`} alt={project.alt} /> : <img src={`${project.mockup}`} alt={project.mockupAlt} />}
 
-                {project.hasLiveSite ? <a href={project.siteAddress} target="_blank" rel="noopener">
-                    <SiteButton>View Live Site</SiteButton>
+                {project.hasLiveSite ? <a href={project.siteAddress} target="_blank" rel="noopener noreferrer">
+                    <SiteButton aria-label={`${project.liveSiteBtnAriaLabel}`}>View Live Site</SiteButton>
                 </a> : null}
             </Main>
         </ProjectPageWrapper>
@@ -120,7 +120,7 @@ const SiteButton = styled.button`
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
     color: white;
-    font-weight: 700;
+    font-weight: 400;
 
     &:hover {
         background-color: #972183;
