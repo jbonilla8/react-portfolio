@@ -10,7 +10,7 @@ const Hero = (props) => (
       <LeftPanel>
         <ProfilePic src={Profile} alt="Photo of Jalisa Bonilla" />
         <HeroText>
-          Hi, my name is Jalisa. I'm a Front End Web Developer.
+          Hi, my name is Jalisa. I'm a Front End Web Developer & Designer.
         </HeroText>
         <a href="#projects">
           <HeroButton>See My Work</HeroButton>
@@ -29,6 +29,7 @@ const HeroContainer = styled.div`
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 100vh;
+  letter-spacing: 0.1rem;
 
   @media (max-width: ${device.laptopM}) {
     grid-template-columns: auto;
@@ -50,7 +51,7 @@ const ProfilePic = styled.img`
 
 const HeroText = styled.div`
   color: #227C9D;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-top: 2rem;
 
   @media (max-width: ${device.tabletL}) {
@@ -69,7 +70,6 @@ const HeroButton = styled.button`
   width: 220px;
   height: 60px;
   font-size: 1.2rem;
-  letter-spacing: 0.1rem;
 
   &:hover {
     background-color: #8c04a4;
