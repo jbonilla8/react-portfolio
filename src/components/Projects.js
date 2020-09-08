@@ -90,7 +90,6 @@ const TilesContainer = styled.div`
 const Tile = styled.div`
   cursor: pointer;
   position: relative;
-  display: flex;
 
   img {
     width: 100%;
