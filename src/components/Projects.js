@@ -58,11 +58,11 @@ const ToggleButton = styled.button`
   border-radius: 0px;
   padding: 20px 40px;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.2rem;
   outline: none;
   color: ${props => (props.active ? 'white' : 'black')};
-  background-color: ${props => (props.active ? '#00BCD4' : 'white')};
+  background-color: ${props => (props.active ? '#227C9D' : 'white')};
 
   @media (max-width: ${device.mobileL}) {
     font-size: 0.9rem;

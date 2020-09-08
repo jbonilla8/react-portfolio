@@ -57,7 +57,7 @@ const ContactContainer = styled.div`
     color: black;
 
     &:hover {
-      color: #3c748e;
+      color: #227C9D;
     }
 
     @media (min-width: ${device.tablet}) {

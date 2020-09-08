@@ -12,7 +12,7 @@ const Navbar = (props) => {
       <NavWrapper open={open}>
         <NavContainer isSticky={props.isSticky}>
           <NavLinks>
-            <Home href="#home">Home</Home>
+            <Home href="#home"><span>Jalisa</span> Bonilla</Home>
             <About href="#about">About</About>
             <Projects href="#projects">Projects</Projects>
             <Contact href="#contact">Contact</Contact>
@@ -53,6 +53,7 @@ const NavLinks = styled.div`
   grid-template-rows: 50px;
   text-align: center;
   align-items: center;
+  text-transform: uppercase;
 
   a {
     text-decoration: none;
@@ -61,35 +62,53 @@ const NavLinks = styled.div`
     letter-spacing: 0.1em;
 
     &:hover {
-      color: #b0c4d4;
+      color: #FA4C98;
     }
   }
 
-  @media (max-width: ${device.mobileL}) {
-    display: none;
-  }
+  
 `;
 
 const Home = styled.a`
   grid-column: 2/3;
+
+  span {
+    color: #E0FF4F;
+  }
+
+  @media (max-width: ${device.tabletM}) {
+    grid-column: 1/span 3;
+  }
 `;
 
 const About = styled.a`
   grid-column: 3/4;
+
+  @media (max-width: ${device.tabletM}) {
+    display: none;
+  }
 `;
 
 const Projects = styled.a`
   grid-column: 4/5;
+
+  @media (max-width: ${device.tabletM}) {
+    display: none;
+  }
 `;
 
 const Contact = styled.a`
   grid-column: 5/6;
+
+  @media (max-width: ${device.tabletM}) {
+    display: none;
+  }
 `;
 
 const BurgerContainer = styled.div`
   display: none;
 
-  @media (max-width: ${device.mobileL}) {
+  @media (max-width: ${device.tabletM}) {
     display: block;
   }
 `;

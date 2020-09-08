@@ -7,12 +7,10 @@ const About = () => (
     <Text>
       <AboutContainer>
         <P1>
-            I create captivating websites that offer responsive and intuitive user
-            experiences. I am originally from Nebraska but currently reside in
-            Florida. I am really diggin the sunshine state! Vivamus egestas felis a tortor vulputate suscipit. Pellentesque at libero nec odio condimentum ultrices. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+          From the design to coding stage, I create websites that offer responsive and intuitive user experiences. My professional background includes contributing to the development of banking software and marketing websites. I am constantly expanding my knowledge of web related technologies and design. <span>Below are some frameworks, languages, and tools I have worked with:</span>
         </P1>
         <P2>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut auctor enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus egestas felis a tortor vulputate suscipit. I am constantly expanding my knowledge of web related technologies and design. <span>Below are some frameworks, languages, and tools I have worked with:</span>
+          I am originally from Nebraska but have just recently moved to Florida. I am loving the sunshine state! In my spare time I love to read novels, go on nature hikes, and practice photography.
         </P2>
       </AboutContainer>
     </Text>
@@ -32,9 +30,13 @@ const AboutWrapper = styled.div`
 
 const Text = styled.div`
   grid-column: 2/3;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.3rem;
   line-height: 2.2rem;
+
+  span {
+    font-weight: 700;
+  }
 
   @media (max-width: ${device.tabletL}) {
     font-size: 1.1rem;
@@ -64,9 +66,5 @@ const P2 = styled.p`
   @media (max-width: ${device.tabletL}) {
     grid-column: 1/span 2;
     grid-row: 2/3;
-  }
-
-  span {
-    font-weight: 700;
   }
 `;

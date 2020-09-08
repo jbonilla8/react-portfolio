@@ -10,7 +10,7 @@ const Hero = (props) => (
       <LeftPanel>
         <ProfilePic src={Profile} alt="Photo of Jalisa Bonilla" />
         <HeroText>
-          Hi, my name is Jalisa. I'm a Front End Web Developer & Designer.
+          Hi, my name is Jalisa. I'm a Front End Web Developer.
         </HeroText>
         <a href="#projects">
           <HeroButton>See My Work</HeroButton>
@@ -49,8 +49,7 @@ const ProfilePic = styled.img`
 `;
 
 const HeroText = styled.div`
-  color: #3c748e;
-  font-weight: 500;
+  color: #227C9D;
   font-size: 1.8rem;
   margin-top: 2rem;
 

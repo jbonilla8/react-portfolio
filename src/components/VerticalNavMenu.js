@@ -5,7 +5,6 @@ const VerticalNavMenu = ({ open }) => {
 
     return (
         <VerticalNavContainer open={open} >
-            <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
@@ -28,6 +27,7 @@ const VerticalNavContainer = styled.div`
   flex-wrap: nowrap;
   line-height: 3rem;
   padding: 3rem 0;
+  text-transform: uppercase;
 
   a {
     text-decoration: none;
