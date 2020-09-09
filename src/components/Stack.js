@@ -19,19 +19,18 @@ const Stack = () => {
   return (
     <TechIconsContainer id="stack">
       <Cards>
-        <span><ReactImg src={ReactIcon} alt="image of React framework icon" />
-          <p>React</p></span>
-        <JavaScriptImg src={JavaScriptIcon} alt="image of JavaScript language icon" />
-        <JQueryImg src={JQueryIcon} alt="image of JQuery library icon" />
-        <HTML5Img src={HTML5Icon} alt="image of HTML5 language icon" />
-        <CSS3Img src={CSS3Icon} alt="image of CSS3 language icon" />
-        <SassImg src={SassIcon} alt="image of Sass preprocessor scripting language icon" />
-        <StyledCompImg src={StyledCompIcon} alt="image of Styled Components icon" />
-        <GitImg src={GitIcon} alt="image of Git icon" />
-        <BootstrapImg src={BootstrapIcon} alt="image of Bootstrap icon" />
-        <CsharpImg src={CsharpIcon} alt="image of C# language icon" />
-        <PhotoshopImg src={PhotoshopIcon} alt="image of Photoshop icon" />
-        <FigmaImg src={FigmaIcon} alt="image of Figma icon" />
+        <ReactImg src={ReactIcon} alt="image of React framework icon" title="React" />
+        <JavaScriptImg src={JavaScriptIcon} alt="image of JavaScript language icon" title="JavaScript" />
+        <JQueryImg src={JQueryIcon} alt="image of JQuery library icon" title="jQuery" />
+        <HTML5Img src={HTML5Icon} alt="image of HTML5 language icon" title="HTML5" />
+        <CSS3Img src={CSS3Icon} alt="image of CSS3 language icon" title="CSS3" />
+        <SassImg src={SassIcon} alt="image of Sass preprocessor scripting language icon" title="Sass" />
+        <StyledCompImg src={StyledCompIcon} alt="image of Styled Components icon" title="Styled Components" />
+        <GitImg src={GitIcon} alt="image of Git icon" title="Git" />
+        <BootstrapImg src={BootstrapIcon} alt="image of Bootstrap icon" title="Bootstrap" />
+        <CsharpImg src={CsharpIcon} alt="image of C# language icon" title="C Sharp" />
+        <PhotoshopImg src={PhotoshopIcon} alt="image of Photoshop icon" title="Photoshop" />
+        <FigmaImg src={FigmaIcon} alt="image of Figma icon" title="Figma" />
       </Cards>
     </TechIconsContainer>
   )
@@ -58,13 +57,6 @@ grid-gap: 1rem;
 align-items: center;
 justify-items: center;
 
-span {
-  display: inline-flex;
-  align-items: center;
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
 grid-template-columns: repeat(2, 1fr); 
 row-gap: 50px;
 column-gap: normal;
@@ -79,7 +71,7 @@ column-gap: normal;
 `;
 
 const ReactImg = styled.img`
-  width: 115px;
+  width: 120px;
 `;
 
 const JavaScriptImg = styled.img`
