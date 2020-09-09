@@ -76,6 +76,10 @@ const Home = styled.a`
     color: #E0FF4F;
   }
 
+  &:hover {
+    color: #fff !important;
+  }
+
   @media (max-width: ${device.tabletM}) {
     grid-column: 1/span 3;
   }
