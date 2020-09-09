@@ -37,7 +37,7 @@ const NavBurgerButton = styled.button`
     background: white;
     transition: transform 0.25s, opacity 0.25s;
     position: relative;
-    transform-origin: 1px;
+    transform-origin: .05rem;
 
     :first-child {
       transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0)')};
