@@ -30,7 +30,7 @@ const ProjectPage = () => {
                 <Summary>
                     {project.summary}
                 </Summary>
-                {project.type === 'react' ? <img src={`${project.thumbnailImg}`} alt={project.alt} /> : <img src={`${project.mockup}`} alt={project.mockupAlt} />}
+                {project.type === 'react-js' ? <img src={`${project.thumbnailImg}`} alt={project.alt} /> : <img src={`${project.mockup}`} alt={project.mockupAlt} />}
 
                 {project.hasLiveSite ? <a href={project.siteAddress} target="_blank" rel="noopener noreferrer">
                     <SiteButton aria-label={`${project.liveSiteBtnAriaLabel}`}>View Live Site</SiteButton>

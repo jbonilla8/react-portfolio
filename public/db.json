@@ -2,7 +2,7 @@
     "projects": [
         {
             "id": 1,
-            "type": "react",
+            "type": "react-js",
             "title": "Tetris",
             "description": "React Application",
             "thumbnailImg": "/images/thumbnails/tetris.png",
@@ -15,7 +15,7 @@
         },
         {
             "id": 2,
-            "type": "react",
+            "type": "react-js",
             "title": "Sweet Beats",
             "description": "React Application",
             "thumbnailImg": "/images/thumbnails/sweetbeats.png",
@@ -28,7 +28,7 @@
         },
         {
             "id": 3,
-            "type": "react",
+            "type": "react-js",
             "title": "Movie Finder",
             "description": "React Application",
             "thumbnailImg": "/images/thumbnails/movieFinder.png",
@@ -41,7 +41,7 @@
         },
         {
             "id": 4,
-            "type": "react",
+            "type": "react-js",
             "title": "eCalendar",
             "description": "React Application",
             "thumbnailImg": "/images/thumbnails/calendarApp.png",

@@ -16,6 +16,8 @@ const Projects = () => {
 
   if (projects.length == 0) return false;
 
+
+
   return (
     <ProjectsWrapper id="projects">
       <Filters>
@@ -26,13 +28,15 @@ const Projects = () => {
         ))}
       </Filters>
       <TilesContainer>
-        {projects.map(project => (
-          <Link to={`/project/${project.id}`}>
-            <Tile key={project.id}>
-              <img src={`${project.thumbnailImg}`} alt={project.alt} />
-            </Tile>
-          </Link>
-        ))}
+        {projects
+          .filter(project => active === 'ALL' || project.type.toLowerCase() === active.toLowerCase())
+          .map(project => (
+            <Link to={`/project/${project.id}`}>
+              <Tile key={project.id}>
+                <img src={`${project.thumbnailImg}`} alt={project.alt} />
+              </Tile>
+            </Link>
+          ))}
       </TilesContainer>
     </ProjectsWrapper>
   )
