@@ -109,10 +109,14 @@ const Main = styled.div`
 `;
 
 const Summary = styled.div`
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 400;
     line-height: 2.5rem;
     padding-bottom: 50px;
+
+    @media (max-width: ${device.tabletL}) {
+        font-size: 1.1rem;
+      }
 `;
 
 const ButtonsContainer = styled.div`
