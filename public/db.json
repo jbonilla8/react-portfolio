@@ -142,7 +142,7 @@
             "alt": "thumbnail of Sugar Pop Bakery design project",
             "mockup": "/images/mockups/sugarpop.jpg",
             "mockupAlt": "Sugar Pop Bakery design project mockup",
-            "summary": "A design mockup created with Photoshop for a fictitious bakery business.",
+            "summary": "A design mockup created with Photoshop for a fictitious bakery business. After creating the design mockup, I utilized HTML, Sass, and Bootstrap to create a live version of it.",
             "hasLiveSite": true,
             "siteAddress": "https://sugarpopbakery.netlify.app/",
             "liveSiteBtnAriaLabel": "View Sugar Pop Bakery Live Site",
