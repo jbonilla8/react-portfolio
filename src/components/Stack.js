@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { device } from '../shared/styles';
 
 import ReactIcon from '../images/icons/tech/react2.png';
 import JavaScriptIcon from '../images/icons/tech/javascript.png';
@@ -50,24 +49,24 @@ const TechIconsContainer = styled.div`
 `;
 
 const Cards = styled.div`
-display: grid;
-max-width: 100vw;
-margin: 0 1rem;
-grid-gap: 1rem;
-align-items: center;
-justify-items: center;
+  display: grid;
+  max-width: 100vw;
+  margin: 0 1rem;
+  grid-gap: 1rem;
+  align-items: center;
+  justify-items: center;
 
-grid-template-columns: repeat(2, 1fr); 
-row-gap: 50px;
-column-gap: normal;
+  grid-template-columns: repeat(2, 1fr); 
+  row-gap: 50px;
+  column-gap: normal;
 
-@media (min-width: 600px) {
-  grid-template-columns: repeat(4, 1fr); 
-}
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(4, 1fr); 
+  }
 
-@media (min-width: 1200px) {
-  grid-template-columns: repeat(6, 1fr); 
-}
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(6, 1fr); 
+  }
 `;
 
 const ReactImg = styled.img`

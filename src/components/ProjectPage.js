@@ -20,7 +20,6 @@ const ProjectPage = () => {
         return (<div></div>)
     }
     return (
-        // add link to github for projects with repos
         <ProjectPageWrapper>
             <Header>
                 <Title>{project.title}</Title>
@@ -32,9 +31,19 @@ const ProjectPage = () => {
                 </Summary>
                 {project.type === 'react-js' ? <img src={`${project.thumbnailImg}`} alt={project.alt} /> : <img src={`${project.mockup}`} alt={project.mockupAlt} />}
 
-                {project.hasLiveSite ? <a href={project.siteAddress} target="_blank" rel="noopener noreferrer">
-                    <SiteButton aria-label={`${project.liveSiteBtnAriaLabel}`}>View Live Site</SiteButton>
-                </a> : null}
+                <ButtonsContainer>
+                    {project.hasGitHubRepo ? <a href={project.gitHubLink} target="_blank" rel="noopener noreferrer">
+                        <GitHubButton aria-label={`${project.gitHubBtnAriaLabel}`}>GitHub</GitHubButton>
+                    </a> : null}
+
+                    {project.hasLiveSite ? <a href={project.siteAddress} target="_blank" rel="noopener noreferrer">
+                        <SiteButton aria-label={`${project.liveSiteBtnAriaLabel}`}>View Live Site</SiteButton>
+                    </a> : null}
+
+                    {project.hasFigmaMockup ? <a href={project.figmaLink} target="_blank" rel="noopener noreferrer">
+                        <FigmaButton aria-label={`${project.figmaBtnAriaLabel}`}>Figma</FigmaButton>
+                    </a> : null}
+                </ButtonsContainer>
             </Main>
         </ProjectPageWrapper>
     )
@@ -78,10 +87,6 @@ const Main = styled.div`
         justify-self: center;
     }
 
-    a {
-        justify-self: center;
-    }
-
     @media (min-width: ${device.mobileL}) {
         padding: 50px;
     }
@@ -110,19 +115,59 @@ const Summary = styled.div`
     padding-bottom: 50px;
 `;
 
-const SiteButton = styled.button`
-    cursor: pointer;
-    outline: none;
-    width: 220px;
-    height: 60px;
-    border: none;
-    background-color: #A72592;
-    font-size: 1.2rem;
-    letter-spacing: 0.1rem;
-    color: white;
-    font-weight: 400;
+const ButtonsContainer = styled.div`
+    display: grid;
+    text-align: center;
 
+    @media (min-width: ${device.tabletM}) {
+        display: inline-flex;
+        justify-self: center;
+    }
+
+    a {
+        button {
+            cursor: pointer;
+            outline: none;
+            width: 220px;
+            height: 60px;
+            border: none;
+            font-size: 1.2rem;
+            letter-spacing: 0.1rem;
+            color: white;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+        }
+    }
+`;
+
+const SiteButton = styled.button`
+    background-color: #A72592;
+    
     &:hover {
         background-color: #972183;
+    }
+
+    @media (min-width: ${device.tabletM}) {
+        margin-right: 0.5rem;
+    }
+`;
+
+const GitHubButton = styled.button`
+    background-color: #000;
+
+    &:hover {
+        background-color: #222;
+    }
+
+    @media (min-width: ${device.tabletM}) {
+        margin-right: 0.5rem;
+    }
+`;
+
+const FigmaButton = styled.button`
+    background-color: #0183B7;
+
+    &:hover {
+        background-color: #01668E;
     }
 `;

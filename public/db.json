@@ -11,7 +11,13 @@
             "summary": "A personal rendition of the classic tetris game originally developed by Alexey Pajitnov.",
             "hasLiveSite": true,
             "siteAddress": "https://tetrisbyjalisa.netlify.app/",
-            "liveSiteBtnAriaLabel": "View Tetris Live Site"
+            "liveSiteBtnAriaLabel": "View Tetris Live Site",
+            "hasGitHubRepo": true,
+            "gitHubLink": "https://github.com/jbonilla8/jalisa-tetris",
+            "gitHubBtnAriaLabel": "Go to Tetris GitHub Repo",
+            "hasFigmaMockup": false,
+            "figmaLink": "",
+            "figmaBtnAriaLabel": ""
         },
         {
             "id": 2,
@@ -24,7 +30,13 @@
             "summary": "A playlist creator application that uses the Spotify Web API and OAuth 2.0 API. The app allows the user to creator playlists based on bpm, danceability, energy, instrumentalness, and valence (musical positiveness). Users can enjoy a 30 second preview of songs in each playlist and save them to the user's Spotify account for later enjoyment. Myself and three other developers created this application for a Chingu cohort group project during a six week span.",
             "hasLiveSite": true,
             "siteAddress": "https://sweet-beats.herokuapp.com/",
-            "liveSiteBtnAriaLabel": "View Sweet Beats Live Site"
+            "liveSiteBtnAriaLabel": "View Sweet Beats Live Site",
+            "hasGitHubRepo": true,
+            "gitHubLink": "https://github.com/chingu-voyages/v19-geckos-team-04",
+            "gitHubBtnAriaLabel": "Go to Sweet Beats GitHub Repo",
+            "hasFigmaMockup": true,
+            "figmaLink": "https://www.figma.com/file/9ldSiikBuURak9E6PcNibG/BPM-Workout?node-id=3%3A12",
+            "figmaBtnAriaLabel": "Go to Sweet Beats Figma design mockup"
         },
         {
             "id": 3,
@@ -37,7 +49,13 @@
             "summary": "An imdb clone application created by myself and a team of 3 other developers for a six week Chingu group project. It has been built with the React JavaScript framework. It features a search bar to look for a film, a sign up form to create a new account, and a sign in link that opens a modal to enter a username and password. Clicking on a movie card image takes the user to a page with more details about the selected movie. The plus sign adds the movie to a watchlist where it is stored in a firebase database and is displayed under the My Watchlist tab.",
             "hasLiveSite": true,
             "siteAddress": "https://moviefindernow.netlify.app/",
-            "liveSiteBtnAriaLabel": "View Movie Finder Live Site"
+            "liveSiteBtnAriaLabel": "View Movie Finder Live Site",
+            "hasGitHubRepo": true,
+            "gitHubLink": "https://github.com/chingu-voyages/v18-geckos-team-01",
+            "gitHubBtnAriaLabel": "Go to Movie Finder GitHub Repo",
+            "hasFigmaMockup": true,
+            "figmaLink": "https://www.figma.com/file/owd1ciUtOkoGs9k601oMWw/movie-finder-app?node-id=0%3A1",
+            "figmaBtnAriaLabel": "Go to Movie Finder design mockup"
         },
         {
             "id": 4,
@@ -50,7 +68,13 @@
             "summary": "A Front End only React calendar application. The background image for the events panel change with the seasons as you switch months with the left and right arrows. The data and month on the panel change as you select them from the calendar. A sign in modal displays for the sign in button and an Add Event form displays when you click on the plus icon.",
             "hasLiveSite": true,
             "siteAddress": "https://jalisa-ecalendar.netlify.app/",
-            "liveSiteBtnAriaLabel": "View eCalendar Live Site"
+            "liveSiteBtnAriaLabel": "View eCalendar Live Site",
+            "hasGitHubRepo": true,
+            "gitHubLink": "https://github.com/Chingu-Solo/solo-koala-159/tree/master/jalisa-tier2-ecalendar",
+            "gitHubBtnAriaLabel": "Go to eCalendar GitHub Repo",
+            "hasFigmaMockup": false,
+            "figmaLink": "",
+            "figmaBtnAriaLabel": ""
         },
         {
             "id": 5,
@@ -62,7 +86,14 @@
             "mockup": "/images/mockups/quest.jpg",
             "mockupAlt": "Quest Overland project design mockup",
             "summary": "An unofficial redesign mockup for Quest Overland. Discovered the prompt via 99designs.",
-            "hasLiveSite": false
+            "hasLiveSite": false,
+            "siteAddress": "",
+            "hasGitHubRepo": false,
+            "gitHubLink": "",
+            "gitHubBtnAriaLabel": "",
+            "hasFigmaMockup": false,
+            "figmaLink": "",
+            "figmaBtnAriaLabel": ""
         },
         {
             "id": 6,
@@ -74,7 +105,14 @@
             "mockup": "/images/mockups/mqual.jpg",
             "mockupAlt": "Mqual design project mockup",
             "summary": "An unofficial redesign mockup for Mqual. Discovered the prompt via 99designs.",
-            "hasLiveSite": false
+            "hasLiveSite": false,
+            "siteAddress": "",
+            "hasGitHubRepo": false,
+            "gitHubLink": "",
+            "gitHubBtnAriaLabel": "",
+            "hasFigmaMockup": false,
+            "figmaLink": "",
+            "figmaBtnAriaLabel": ""
         },
         {
             "id": 7,
@@ -86,7 +124,14 @@
             "mockup": "/images/mockups/peace.jpg",
             "mockupAlt": "Peace Lovin' Granola design project mockup",
             "summary": "An unofficial redesign mockup for Peace Lovin' Granola. Discovered the prompt via 99designs.",
-            "hasLiveSite": false
+            "hasLiveSite": false,
+            "siteAddress": "",
+            "hasGitHubRepo": false,
+            "gitHubLink": "",
+            "gitHubBtnAriaLabel": "",
+            "hasFigmaMockup": false,
+            "figmaLink": "",
+            "figmaBtnAriaLabel": ""
         },
         {
             "id": 8,
@@ -100,7 +145,13 @@
             "summary": "A design mockup created with Photoshop for a fictitious bakery business.",
             "hasLiveSite": true,
             "siteAddress": "https://sugarpopbakery.netlify.app/",
-            "liveSiteBtnAriaLabel": "View Sugar Pop Bakery Live Site"
+            "liveSiteBtnAriaLabel": "View Sugar Pop Bakery Live Site",
+            "hasGitHubRepo": true,
+            "gitHubLink": "https://github.com/jbonilla8/sugar-pop-bakery",
+            "gitHubBtnAriaLabel": "Go to Sugar Pop Bakery GitHub Repo",
+            "hasFigmaMockup": false,
+            "figmaLink": "",
+            "figmaBtnAriaLabel": ""
         }
     ]
 }
