@@ -44,9 +44,15 @@ const ProjectPage = () => {
                     </a> : null}
                 </ButtonsContainer>
 
-                {project.type === 'react-js' ? <img src={`${project.thumbnailImg}`} alt={project.alt} /> : <img src={`${project.mockup}`} alt={project.mockupAlt} />}
-
-                
+                {project.type === 'react-js' ?
+                    <ReactImage>
+                        <img src={`${project.thumbnailImg}`} alt={project.alt} />
+                    </ReactImage>
+                    :
+                    <DesignImage>
+                        <img src={`${project.mockup}`} alt={project.mockupAlt} />
+                    </DesignImage>
+                }
             </Main>
         </ProjectPageWrapper>
     )
@@ -55,57 +61,55 @@ const ProjectPage = () => {
 export default ProjectPage;
 
 const ProjectPageWrapper = styled.div`
-`;
+        `;
 
 const Header = styled.div`
-    background-color: black;
-    padding: 50px 0px;
-`;
+            background-color: black;
+            padding: 50px 0px;
+        `;
 
 const Title = styled.div`
-    font-size: 2rem;
-    text-align: center;
-    font-weight: 700;
-    letter-spacing: 0.5rem;
-    color: #00BCD4;
-`;
+            font-size: 2rem;
+            text-align: center;
+            font-weight: 700;
+            letter-spacing: 0.5rem;
+            color: #00BCD4;
+        `;
 
 const Description = styled.div`
-    font-size: 1.5rem;
-    text-align: center;
-    letter-spacing: 0.2rem;
-    color: white;
-    text-transform: uppercase;
-`;
+            font-size: 1.5rem;
+            text-align: center;
+            letter-spacing: 0.2rem;
+            color: white;
+            text-transform: uppercase;
+        `;
 
 const Main = styled.div`
-    display: grid;
-    justify-content: center;
-    padding: 50px 25px;
-
+            display: grid;
+            justify-content: center;
+            padding: 50px 25px;
+        
     img {
         margin-bottom: 50px;
-        max-width: 80vw;
         border: 4px solid black;
-        justify-self: center;
     }
-
+    
     @media (min-width: ${device.mobileL}) {
         padding: 50px;
     }
-
+    
     @media (min-width: ${device.tablet}) {
         padding: 50px 100px;
     }
-
+    
     @media (min-width: ${device.tabletM}) {
         padding: 50px 150px;
     }
-
+    
     @media (min-width: ${device.laptop}) {
         padding: 50px 200px;
     }
-
+    
     @media (min-width: ${device.laptopM}) {
         padding: 50px 250px;
     }
@@ -117,22 +121,23 @@ const Summary = styled.div`
     line-height: 2.5rem;
     padding-bottom: 50px;
     place-self: center;
-
+    
     @media (max-width: ${device.tabletL}) {
         font-size: 1.1rem;
-      }
+    }
 `;
 
 const ButtonsContainer = styled.div`
     display: grid;
     text-align: center;
     padding-bottom: 50px;
-
+    column-gap: 0.5rem;
+    
     @media (min-width: ${device.tabletM}) {
         display: inline-flex;
         justify-self: center;
     }
-
+    
     a {
         button {
             cursor: pointer;
@@ -151,11 +156,11 @@ const ButtonsContainer = styled.div`
 
 const SiteButton = styled.button`
     background-color: #A72592;
-    
-    &:hover {
-        background-color: #972183;
-    }
 
+    &:hover {
+        background - color: #972183;
+        }
+    
     @media (min-width: ${device.tabletM}) {
         margin-right: 0.5rem;
     }
@@ -163,20 +168,41 @@ const SiteButton = styled.button`
 
 const GitHubButton = styled.button`
     background-color: #000;
-
+    
     &:hover {
-        background-color: #222;
+        background - color: #222;
     }
-
+    
     @media (min-width: ${device.tabletM}) {
-        margin-right: 0.5rem;
+        margin - right: 0.5rem;
     }
 `;
 
 const FigmaButton = styled.button`
     background-color: #0183B7;
-
+    
     &:hover {
         background-color: #01668E;
+    }
+`;
+
+const ReactImage = styled.div`
+    justify-self: center;
+
+    img {
+        justify-self: center;
+        max-width: 50vw;
+
+        @media (max-width: ${device.tabletM}) {
+            max-width: 80vw;
+        }
+    }
+`;
+
+const DesignImage = styled.div`
+    justify-self: center;
+
+    img {
+        max-width: 80vw;
     }
 `;
