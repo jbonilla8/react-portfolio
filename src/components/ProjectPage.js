@@ -44,15 +44,17 @@ const ProjectPage = () => {
                     </a> : null}
                 </ButtonsContainer>
 
-                {project.type === 'react-js' ?
-                    <ReactImage>
-                        <img src={`${project.thumbnailImg}`} alt={project.alt} />
-                    </ReactImage>
-                    :
-                    <DesignImage>
-                        <img src={`${project.mockup}`} alt={project.mockupAlt} />
-                    </DesignImage>
-                }
+                <ProjectImage>
+                    {project.type === 'react-js' ?
+                        <ReactImage>
+                            <img src={`${project.thumbnailImg}`} alt={project.alt} />
+                        </ReactImage>
+                        :
+                        <DesignImage>
+                            <img src={`${project.mockup}`} alt={project.mockupAlt} />
+                        </DesignImage>
+                    }
+                </ProjectImage>
             </Main>
         </ProjectPageWrapper>
     )
@@ -61,33 +63,34 @@ const ProjectPage = () => {
 export default ProjectPage;
 
 const ProjectPageWrapper = styled.div`
-        `;
+`;
 
 const Header = styled.div`
-            background-color: black;
-            padding: 50px 0px;
-        `;
+    background-color: black;
+    padding: 50px 0px;
+`;
 
 const Title = styled.div`
-            font-size: 2rem;
-            text-align: center;
-            font-weight: 700;
-            letter-spacing: 0.5rem;
-            color: #00BCD4;
-        `;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    color: #00BCD4;
+`;
 
 const Description = styled.div`
-            font-size: 1.5rem;
-            text-align: center;
-            letter-spacing: 0.2rem;
-            color: white;
-            text-transform: uppercase;
-        `;
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    color: white;
+    text-transform: uppercase;
+`;
 
 const Main = styled.div`
-            display: grid;
-            justify-content: center;
-            padding: 50px 25px;
+    display: grid;
+    justify-content: center;
+    padding: 50px 25px;
+    row-gap: 2rem;
         
     img {
         margin-bottom: 50px;
@@ -100,6 +103,7 @@ const Main = styled.div`
     
     @media (min-width: ${device.tablet}) {
         padding: 50px 100px;
+        row-gap: 3rem;
     }
     
     @media (min-width: ${device.tabletM}) {
@@ -119,7 +123,6 @@ const Summary = styled.div`
     font-size: 1.3rem;
     font-weight: 400;
     line-height: 2.5rem;
-    padding-bottom: 50px;
     place-self: center;
     
     @media (max-width: ${device.tabletL}) {
@@ -130,7 +133,6 @@ const Summary = styled.div`
 const ButtonsContainer = styled.div`
     display: grid;
     text-align: center;
-    padding-bottom: 50px;
     column-gap: 0.5rem;
     
     @media (min-width: ${device.tabletM}) {
@@ -159,7 +161,7 @@ const SiteButton = styled.button`
 
     &:hover {
         background - color: #972183;
-        }
+    }
     
     @media (min-width: ${device.tabletM}) {
         margin-right: 0.5rem;
@@ -186,11 +188,13 @@ const FigmaButton = styled.button`
     }
 `;
 
-const ReactImage = styled.div`
+const ProjectImage = styled.div`
     justify-self: center;
+    margin-top: 0.5rem;
+`;
 
+const ReactImage = styled.div`
     img {
-        justify-self: center;
         max-width: 50vw;
 
         @media (max-width: ${device.tabletM}) {
@@ -200,8 +204,6 @@ const ReactImage = styled.div`
 `;
 
 const DesignImage = styled.div`
-    justify-self: center;
-
     img {
         max-width: 80vw;
     }
