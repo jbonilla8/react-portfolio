@@ -29,7 +29,6 @@ const ProjectPage = () => {
                 <Summary>
                     {project.summary}
                 </Summary>
-                {project.type === 'react-js' ? <img src={`${project.thumbnailImg}`} alt={project.alt} /> : <img src={`${project.mockup}`} alt={project.mockupAlt} />}
 
                 <ButtonsContainer>
                     {project.hasGitHubRepo ? <a href={project.gitHubLink} target="_blank" rel="noopener noreferrer">
@@ -44,6 +43,10 @@ const ProjectPage = () => {
                         <FigmaButton aria-label={`${project.figmaBtnAriaLabel}`}>Figma</FigmaButton>
                     </a> : null}
                 </ButtonsContainer>
+
+                {project.type === 'react-js' ? <img src={`${project.thumbnailImg}`} alt={project.alt} /> : <img src={`${project.mockup}`} alt={project.mockupAlt} />}
+
+                
             </Main>
         </ProjectPageWrapper>
     )
@@ -113,6 +116,7 @@ const Summary = styled.div`
     font-weight: 400;
     line-height: 2.5rem;
     padding-bottom: 50px;
+    place-self: center;
 
     @media (max-width: ${device.tabletL}) {
         font-size: 1.1rem;
@@ -122,6 +126,7 @@ const Summary = styled.div`
 const ButtonsContainer = styled.div`
     display: grid;
     text-align: center;
+    padding-bottom: 50px;
 
     @media (min-width: ${device.tabletM}) {
         display: inline-flex;
