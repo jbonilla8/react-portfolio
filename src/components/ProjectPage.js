@@ -160,8 +160,8 @@ const BulletPoint = styled.div`
 `;
 
 const Square = styled.div`
-    height: 15px;
-    width: 15px;
+    height: 13px;
+    width: 13px;
     background-color: #00BCD4;
 
     @media (max-width: ${device.tabletL}) {
