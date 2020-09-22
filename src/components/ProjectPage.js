@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Fragment } from 'react';
 import { useParams } from 'react-router'
 import styled from 'styled-components';
 import { device } from '../shared/styles';
@@ -21,7 +21,7 @@ const ProjectPage = () => {
     }
 
     return (
-        <ProjectPageWrapper>
+        <Fragment>
             <Header>
                 <Title>{project.title}</Title>
                 <Description>{project.description}</Description>
@@ -63,14 +63,11 @@ const ProjectPage = () => {
                     }
                 </ProjectImage>
             </Main>
-        </ProjectPageWrapper>
+        </Fragment>
     )
 }
 
 export default ProjectPage;
-
-const ProjectPageWrapper = styled.div`
-`;
 
 const Header = styled.div`
     height: 190px;
@@ -107,43 +104,25 @@ const Description = styled.div`
 const Main = styled.div`
     display: grid;
     justify-content: center;
-    padding: 50px 25px;
+    padding: 50px 50px;
     row-gap: 1rem;
         
     img {
         margin-bottom: 50px;
         border: 4px solid black;
     }
-    
-    @media (min-width: ${device.mobileL}) {
-        padding: 25px;
-    }
-    
-    @media (min-width: ${device.tablet}) {
-        padding: 50px 100px;
-        row-gap: 3rem;
-    }
-    
-    @media (min-width: ${device.tabletM}) {
-        padding: 50px 150px;
-    }
-    
-    @media (min-width: ${device.laptop}) {
-        padding: 50px 200px;
-    }
-    
-    @media (min-width: ${device.laptopM}) {
-        padding: 50px 250px;
-    }
 `;
 
-const Summary = styled.ul`
+const Summary = styled.div`
     font-size: 1.3rem;
     font-weight: 400;
     place-self: center;
     list-style: none;
     line-height: 2rem;
-    list-style-type: none;
+
+    @media (max-width: ${device.mobileL}) {
+        line-height: 1.6rem;
+    }
     
     @media (max-width: ${device.tabletL}) {
         font-size: 1.1rem;
@@ -174,7 +153,7 @@ const Sentence = styled.li`
     margin-bottom: 1rem;
 
     @media (max-width: ${device.mobileL}) {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.6rem;
     }
 `;
 
