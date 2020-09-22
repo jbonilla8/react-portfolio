@@ -143,7 +143,7 @@ const Summary = styled.ul`
     place-self: center;
     list-style: none;
     line-height: 2rem;
-    text-decoration: none;
+    list-style-type: none;
     
     @media (max-width: ${device.tabletL}) {
         font-size: 1.1rem;
