@@ -19,15 +19,19 @@ const ProjectPage = () => {
     if (project === undefined) {
         return (<div></div>)
     }
+
     return (
         <ProjectPageWrapper>
             <Header>
                 <Title>{project.title}</Title>
                 <Description>{project.description}</Description>
+                {/* <a href="/">Go Back to Homepage</a> */}
             </Header>
             <Main>
                 <Summary>
-                    {project.summary}
+                    {project.summary.split("\. ").map(sentence => {
+                        return <BulletPoint>{sentence}</BulletPoint>
+                    })}
                 </Summary>
 
                 <ButtonsContainer>
@@ -66,13 +70,25 @@ const ProjectPageWrapper = styled.div`
 `;
 
 const Header = styled.div`
+    height: 190px;
+    display: flex;
+    flex-flow: column;
     background-color: black;
-    padding: 50px 0px;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        color: white;
+        margin-top: 1rem;
+
+        &:hover {
+            color: #A72592;
+        }
+    }
 `;
 
 const Title = styled.div`
     font-size: 2rem;
-    text-align: center;
     font-weight: 700;
     letter-spacing: 0.5rem;
     color: #00BCD4;
@@ -80,7 +96,6 @@ const Title = styled.div`
 
 const Description = styled.div`
     font-size: 1.5rem;
-    text-align: center;
     letter-spacing: 0.2rem;
     color: white;
     text-transform: uppercase;
@@ -90,7 +105,7 @@ const Main = styled.div`
     display: grid;
     justify-content: center;
     padding: 50px 25px;
-    row-gap: 2rem;
+    row-gap: 1rem;
         
     img {
         margin-bottom: 50px;
@@ -98,7 +113,7 @@ const Main = styled.div`
     }
     
     @media (min-width: ${device.mobileL}) {
-        padding: 50px;
+        padding: 25px;
     }
     
     @media (min-width: ${device.tablet}) {
@@ -119,14 +134,33 @@ const Main = styled.div`
     }
 `;
 
-const Summary = styled.div`
+const Summary = styled.ul`
     font-size: 1.3rem;
     font-weight: 400;
-    line-height: 2.5rem;
     place-self: center;
+    list-style: none;
+    line-height: 2rem;
     
     @media (max-width: ${device.tabletL}) {
         font-size: 1.1rem;
+    }
+
+    @media (max-width: ${device.mobileL}) {
+        line-height: 1.5rem;
+    }
+`;
+
+const BulletPoint = styled.li`
+    padding-bottom: 1rem;
+
+    &::before {
+        content: "▪"; 
+        color: #00BCD4;
+        margin-right: 1rem;
+    }
+
+    @media (max-width: ${device.mobileL}) {
+        padding-bottom: 0.5rem;
     }
 `;
 
@@ -160,7 +194,7 @@ const SiteButton = styled.button`
     background-color: #A72592;
 
     &:hover {
-        background - color: #972183;
+        background-color: #972183;
     }
     
     @media (min-width: ${device.tabletM}) {
@@ -172,11 +206,11 @@ const GitHubButton = styled.button`
     background-color: #000;
     
     &:hover {
-        background - color: #222;
+        background-color: #222;
     }
     
     @media (min-width: ${device.tabletM}) {
-        margin - right: 0.5rem;
+        margin-right: 0.5rem;
     }
 `;
 
