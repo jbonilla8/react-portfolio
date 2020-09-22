@@ -152,15 +152,16 @@ const Summary = styled.ul`
 
 const BulletPoint = styled.div`
     display: grid;
-    grid-template-columns: 5% 95%;
+    grid-template-columns: repeat(2, auto);
     grid-template-rows: auto;
     align-items: baseline;
+    column-gap: 3%;
+    justify-content: flex-start;
 `;
 
 const Square = styled.div`
     height: 15px;
     width: 15px;
-    margin-right: 1rem;
     background-color: #00BCD4;
 
     @media (max-width: ${device.tabletL}) {
