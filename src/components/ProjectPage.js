@@ -29,9 +29,12 @@ const ProjectPage = () => {
             </Header>
             <Main>
                 <Summary>
-                    {project.summary.split("\. ").map(sentence => {
-                        return <BulletPoint>{sentence}</BulletPoint>
-                    })}
+                    {project.summary.split(". ").map(sentence =>
+                        <BulletPoint>
+                            <Square />
+                            <Sentence>{sentence}</Sentence>
+                        </BulletPoint>
+                    )}
                 </Summary>
 
                 <ButtonsContainer>
@@ -140,27 +143,37 @@ const Summary = styled.ul`
     place-self: center;
     list-style: none;
     line-height: 2rem;
+    text-decoration: none;
     
     @media (max-width: ${device.tabletL}) {
         font-size: 1.1rem;
     }
+`;
 
-    @media (max-width: ${device.mobileL}) {
-        line-height: 1.5rem;
+const BulletPoint = styled.div`
+    display: grid;
+    grid-template-columns: 5% 95%;
+    grid-template-rows: auto;
+    align-items: baseline;
+`;
+
+const Square = styled.div`
+    height: 15px;
+    width: 15px;
+    margin-right: 1rem;
+    background-color: #00BCD4;
+
+    @media (max-width: ${device.tabletL}) {
+        height: 10px;
+        width: 10px;
     }
 `;
 
-const BulletPoint = styled.li`
-    padding-bottom: 1rem;
-
-    &::before {
-        content: "▪"; 
-        color: #00BCD4;
-        margin-right: 1rem;
-    }
+const Sentence = styled.li`
+    margin-bottom: 1rem;
 
     @media (max-width: ${device.mobileL}) {
-        padding-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
     }
 `;
 
