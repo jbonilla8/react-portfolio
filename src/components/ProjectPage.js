@@ -199,7 +199,7 @@ const GitHubButton = styled.button`
     background-color: #000;
     
     &:hover {
-        background-color: #222;
+        background-color: #333;
     }
     
     @media (min-width: ${device.tabletM}) {
