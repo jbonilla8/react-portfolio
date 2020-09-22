@@ -104,7 +104,7 @@ const Description = styled.div`
 const Main = styled.div`
     display: grid;
     justify-content: center;
-    padding: 50px 50px;
+    padding: 50px;
     row-gap: 1rem;
         
     img {
