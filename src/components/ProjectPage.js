@@ -29,7 +29,7 @@ const ProjectPage = () => {
             </Header>
             <Main>
                 <Summary>
-                    {project.summary.split(". ").map(sentence =>
+                    {project.summary.map(sentence =>
                         <BulletPoint>
                             <Square />
                             <Sentence>{sentence}</Sentence>
@@ -103,13 +103,16 @@ const Description = styled.div`
 
 const Main = styled.div`
     display: grid;
-    justify-content: center;
-    padding: 50px;
+    padding: 50px 150px;
     row-gap: 1rem;
         
     img {
         margin-bottom: 50px;
         border: 4px solid black;
+    }
+
+    @media (max-width: ${device.tabletL}) {
+        padding: 50px;
     }
 `;
 
@@ -134,13 +137,13 @@ const BulletPoint = styled.div`
     grid-template-columns: repeat(2, auto);
     grid-template-rows: auto;
     align-items: baseline;
-    column-gap: 3%;
     justify-content: flex-start;
 `;
 
 const Square = styled.div`
     height: 13px;
     width: 13px;
+    margin-right: 1rem;
     background-color: #00BCD4;
 
     @media (max-width: ${device.tabletL}) {
