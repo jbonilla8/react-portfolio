@@ -9,7 +9,7 @@
             "mockup": "",
             "alt": "thumbnail of React tetris game project",
             "summary": [
-                "A personal rendition of the classic tetris game originally developed by Alexey Pajitnov."
+                "A personal rendition of the classic tetris game originally developed by Alexey Pajitnov.", "Utilized the React JavaScript framework."
             ],
             "hasLiveSite": true,
             "siteAddress": "https://tetrisbyjalisa.netlify.app/",

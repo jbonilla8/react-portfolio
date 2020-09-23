@@ -2,6 +2,7 @@ import React, { useState, useEffect, Fragment } from 'react';
 import { useParams } from 'react-router'
 import styled from 'styled-components';
 import { device } from '../shared/styles';
+import BackHomeIcon from '../images/icons/backhome.png';
 
 const ProjectPage = () => {
 
@@ -23,9 +24,12 @@ const ProjectPage = () => {
     return (
         <Fragment>
             <Header>
+                <a href="/">
+                    <Home src={BackHomeIcon} alt="image of house with curved arrow to go back to home page" />
+                </a>
                 <Title>{project.title}</Title>
                 <Description>{project.description}</Description>
-                {/* <a href="/">Go Back to Homepage</a> */}
+
             </Header>
             <Main>
                 <Summary>
@@ -79,11 +83,21 @@ const Header = styled.div`
 
     a {
         color: white;
-        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: 2.5rem;
+        margin-bottom: 1rem;
 
-        &:hover {
-            color: #A72592;
+        @media (max-width: ${device.mobileL}) {
+            margin-right: 2rem;
         }
+    }
+`;
+
+const Home = styled.img`
+    width: 2.5rem;
+
+    @media (max-width: ${device.mobileL}) {
+        width: 2rem;
     }
 `;
 
