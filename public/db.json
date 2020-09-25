@@ -9,8 +9,27 @@
             "mockup": "",
             "alt": "thumbnail of React tetris game project",
             "summary": [
-                "A personal rendition of the classic tetris game originally developed by Alexey Pajitnov.",
-                "Utilized the React JavaScript framework."
+                "A personal rendition of the classic tetris game originally developed by Alexey Pajitnov."
+            ],
+            "tech": [
+                "React",
+                "Styled Components"
+            ],
+            "features": [
+                "10x20 Gameboard Grid",
+                "Traditional tetris pieces (tetrominoes)",
+                "Start button to begin the game",
+                "Reset button to start the game over",
+                "Tetromino travels down the grid, one block at a time",
+                "Player presses up arrow or 'X' key to rotate tetromino clockwise",
+                "Player presses ctrl (option) or 'Z' key to rotate tetromino counter-clockwise",
+                "Player presses down arrow to move tetromino down faster (soft drop)",
+                "Player Presses left and right arrow keys to move tetromino accordingly"
+            ],
+            "responsibilities": [
+                "Design and development",
+                "Implementation of Tetris game logic",
+                "Created Trello board to manage and organize project requirements"
             ],
             "hasLiveSite": true,
             "siteAddress": "https://tetrisbyjalisa.netlify.app/",
@@ -115,10 +134,26 @@
             "mockup": "",
             "alt": "thumbnail of eCalendar project",
             "summary": [
-                "A Front End only React calendar application.",
-                "The background image for the events panel change with the seasons as you switch months with the left and right arrows.",
-                "The data and month on the panel change as you select them from the calendar.",
-                "A sign in modal displays for the sign in button and an Add Event form displays when you click on the plus icon."
+                "A frontend only React calendar application for a Chingu cohort solo project."
+            ],
+            "tech": [
+                "React",
+                "Styled Components"
+            ],
+            "features": [
+                "Displays calendars days of the month",
+                "Current date is distinguishable",
+                "Left and right arrows to switch months",
+                "Background image changes based on the season in which the current displayed month is part of",
+                "Displays previous month’s last dates if first day of current month does not start on a Sunday",
+                "3 demo events in the event panel portion of the project",
+                "Displays last days of previous month and/or first days of next month as buffers when needed",
+                "Sign In button that opens a Sign In Modal when clicked",
+                "Plus icon that opens an Add Event Form when clicked"
+            ],
+            "responsibilities": [
+                "Design and development",
+                "Created Trello board to manage and organize project requirements"
             ],
             "hasLiveSite": true,
             "siteAddress": "https://jalisa-ecalendar.netlify.app/",
