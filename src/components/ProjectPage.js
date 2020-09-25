@@ -31,7 +31,7 @@ const ProjectPage = () => {
                 <Description>{project.description}</Description>
             </Header>
             <Main>
-                {project.id === 3 ?
+                {project.id === 2 ||  project.id === 3 ?
                     <Summary>
                         <SectionHeader>Summary</SectionHeader>
                         <TextWrapper>{project.summary}</TextWrapper>

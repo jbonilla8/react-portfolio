@@ -31,11 +31,25 @@
             "mockup": "",
             "alt": "thumbnail of sweet beats React website",
             "summary": [
-                "A playlist creator application that uses the Spotify Web API and OAuth 2.0 API.",
-                "The app allows the user to create playlists based on bpm, danceability, energy, instrumentalness, and valence (musical positiveness).",
-                "Users can enjoy a 30 second preview of songs in each playlist and save them to the user's Spotify account for later enjoyment.",
-                "Myself and three other developers created this application for a Chingu cohort group project during a six week span.",
-                "A design mockup is available to view which I created for the team through Figma."
+                "A playlist generator application that allows the user to create playlists based on bpm, danceability, energy, instrumentalness, and valence (musical positiveness). Developed by myself and three other developers for a Chingu cohort group project during a six week span."
+            ],
+            "tech": [
+                "React",
+                "OAuth 2.0 API",
+                "Spotify Web API",
+                "Styled Components"
+            ],
+            "features": [
+                "Create new playlists based on user's existing Spotify playlists",
+                "Filter songs by bpm, danceability, energy, instrumentalness, and valence",
+                "Listen to a 30 second preview of songs in each playlist",
+                "Save new playlists to the user's Spotify account"
+            ],
+            "responsibilities": [
+                "Created a design mockup for the team utilizing Figma",
+                "Developed vertical navigation menu component",
+                "Developed playlist settings range filters for tempo (bpm), danceability, energy, instrumentalness, and valence",
+                "Deployed application front end and backend repositories with Heroku"
             ],
             "hasLiveSite": true,
             "siteAddress": "https://sweet-beats.herokuapp.com/",
@@ -63,7 +77,8 @@
                 "Firebase",
                 "Styled Components",
                 "Axios",
-                "Strapi"
+                "Strapi",
+                "Rapid API Movie Database API"
             ],
             "features": [
                 "Search api integration to look for a movie",
@@ -78,7 +93,8 @@
                 "Developed Sign In and Sign Up components",
                 "Developed the Movie Details component",
                 "Developed the Watchlist component",
-                "Mobile responsive development"
+                "Mobile responsive development",
+                "Deployed application using Netlify"
             ],
             "hasLiveSite": true,
             "siteAddress": "https://moviefindernow.netlify.app/",
