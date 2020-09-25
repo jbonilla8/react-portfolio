@@ -139,6 +139,10 @@ const Title = styled.div`
     font-weight: 700;
     letter-spacing: 0.5rem;
     color: #00BCD4;
+
+    @media (max-width: ${device.tabletL}) {
+        font-size: 1.8rem;
+    }
 `;
 
 const Description = styled.div`
@@ -146,6 +150,10 @@ const Description = styled.div`
     letter-spacing: 0.2rem;
     color: white;
     text-transform: uppercase;
+
+    @media (max-width: ${device.tabletL}) {
+        font-size: 1.3rem;
+    }
 `;
 
 const Main = styled.div`
