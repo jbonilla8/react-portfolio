@@ -152,6 +152,7 @@ const Main = styled.div`
     display: grid;
     padding: 50px 150px;
     row-gap: 1rem;
+    justify-content: center;
         
     img {
         margin-bottom: 50px;
