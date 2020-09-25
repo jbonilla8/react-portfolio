@@ -122,7 +122,6 @@ const Main = styled.div`
         
     img {
         margin-bottom: 50px;
-        border: 4px solid black;
     }
 
     @media (max-width: ${device.tabletL}) {
@@ -250,5 +249,6 @@ const ReactImage = styled.div`
 const DesignImage = styled.div`
     img {
         max-width: 80vw;
+        border: 4px solid black;
     }
 `;
