@@ -29,17 +29,50 @@ const ProjectPage = () => {
                 </a>
                 <Title>{project.title}</Title>
                 <Description>{project.description}</Description>
-
             </Header>
             <Main>
-                <Summary>
-                    {project.summary.map(sentence =>
-                        <BulletPoint>
-                            <Square />
-                            <Sentence>{sentence}</Sentence>
-                        </BulletPoint>
-                    )}
-                </Summary>
+                {project.id === 3 ?
+                    <Summary>
+                        <SectionHeader>Summary</SectionHeader>
+                        <TextWrapper>{project.summary}</TextWrapper>
+                        <SectionHeader>Tech Used</SectionHeader>
+                        <TextWrapper>
+                            {project.tech.map(item =>
+                                <BulletPoint>
+                                    <Square />
+                                    <Sentence>{item}</Sentence>
+                                </BulletPoint>
+                            )}
+                        </TextWrapper>
+                        <SectionHeader>Features</SectionHeader>
+                        <TextWrapper>
+                            {project.features.map(item =>
+                                <BulletPoint>
+                                    <Square />
+                                    <Sentence>{item}</Sentence>
+                                </BulletPoint>
+                            )}
+                        </TextWrapper>
+                        <SectionHeader>Responsibilities</SectionHeader>
+                        <TextWrapper>
+                            {project.responsibilities.map(item =>
+                                <BulletPoint>
+                                    <Square />
+                                    <Sentence>{item}</Sentence>
+                                </BulletPoint>
+                            )}
+                        </TextWrapper>
+                    </Summary>
+                    :
+                    <Summary>
+                        {project.summary.map(sentence =>
+                            <BulletPoint>
+                                <Square />
+                                <Sentence>{sentence}</Sentence>
+                            </BulletPoint>
+                        )}
+                    </Summary>
+                }
 
                 <ButtonsContainer>
                     {project.hasGitHubRepo ? <a href={project.gitHubLink} target="_blank" rel="noopener noreferrer">
@@ -142,6 +175,24 @@ const Summary = styled.div`
     
     @media (max-width: ${device.tabletL}) {
         font-size: 1.1rem;
+    }
+`;
+
+const SectionHeader = styled.h3`
+    font-size: 1.2rem;
+    margin: 0;
+    color: #777;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+`;
+
+const TextWrapper = styled.div`
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+
+    li {
+        margin-bottom: 0;
     }
 `;
 

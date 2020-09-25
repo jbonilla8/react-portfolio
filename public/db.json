@@ -9,7 +9,8 @@
             "mockup": "",
             "alt": "thumbnail of React tetris game project",
             "summary": [
-                "A personal rendition of the classic tetris game originally developed by Alexey Pajitnov.", "Utilized the React JavaScript framework."
+                "A personal rendition of the classic tetris game originally developed by Alexey Pajitnov.",
+                "Utilized the React JavaScript framework."
             ],
             "hasLiveSite": true,
             "siteAddress": "https://tetrisbyjalisa.netlify.app/",
@@ -55,12 +56,29 @@
             "mockup": "",
             "alt": "thumbnail of MovieFinder project",
             "summary": [
-                "An imdb clone application created by myself and a team of 3 other developers for a six week Chingu group project.",
-                "It has been built with the React JavaScript framework.",
-                "It features a search bar to look for a film, a sign up form to create a new account, and a sign in link that opens a modal to enter a username and password.",
-                "Clicking on a movie card image takes the user to a page with more details about the selected movie.",
-                "The plus sign adds the movie to a watchlist where it is stored in a firebase database and is displayed under the My Watchlist tab.",
-                "A design mockup is available to view which I created for the team through Figma."
+                "An imdb clone application created by myself and 3 other developers for a six week Chingu group project."
+            ],
+            "tech": [
+                "React",
+                "Firebase",
+                "Styled Components",
+                "Axios",
+                "Strapi"
+            ],
+            "features": [
+                "Search api integration to look for a movie",
+                "View details on a selected movie",
+                "Add movies to a watchlist",
+                "Sign In and Sign Up modals"
+            ],
+            "responsibilities": [
+                "Designed a mockup for the team utilizing Figma",
+                "Implemented routing with react-router",
+                "Created reusable modal component",
+                "Developed Sign In and Sign Up components",
+                "Developed the Movie Details component",
+                "Developed the Watchlist component",
+                "Mobile responsive development"
             ],
             "hasLiveSite": true,
             "siteAddress": "https://moviefindernow.netlify.app/",
