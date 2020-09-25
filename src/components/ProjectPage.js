@@ -185,6 +185,10 @@ const SectionHeader = styled.h3`
     font-weight: 500;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
+
+    @media (max-width: ${device.mobileL}) {
+        font-size: 1.1rem;
+    }
 `;
 
 const TextWrapper = styled.div`
