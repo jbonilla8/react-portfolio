@@ -175,8 +175,22 @@
             "mockup": "/images/mockups/quest.jpg",
             "mockupAlt": "Quest Overland project design mockup",
             "summary": [
-                "An unofficial redesign mockup for Quest Overland.",
-                "Discovered the prompt via 99designs."
+                "An unofficial home page redesign mockup for Quest Overland, a sprinter van window cover business. Discovered the prompt via 99designs."
+            ],
+            "customer": [
+                "Capture company brand of outdoors/adventure",
+                "Use provided photographs on the homepage",
+                "Search bar on the header with links",
+                "Show customer testimonials",
+                "Social media links"
+            ],
+            "creative": [
+                "Hero image that showcases the great outdoors",
+                "Gray with forest green accent to pair well with the hero image",
+                "Powerful mission statement that explains what the product it and its value to the customer",
+                "Road map background to symbolize a journey (perhaps in a sprinter van)",
+                "Arrows underneath tile headers symbolize direction and redirect the eye back to the photos",
+                "Photos provide powerful and quick emotional responses"
             ],
             "hasLiveSite": false,
             "siteAddress": "",
@@ -197,8 +211,18 @@
             "mockup": "/images/mockups/mqual.jpg",
             "mockupAlt": "Mqual design project mockup",
             "summary": [
-                "An unofficial redesign mockup for Mqual.",
-                "Discovered the prompt via 99designs."
+                "An unofficial home page redesign mockup for Mqual. Discovered the prompt via 99designs."
+            ],
+            "customer": [
+                "Technology professionals that provide a multitude of services",
+                "Highlight successes by including numerical figures",
+                "Include client testimonies"
+            ],
+            "creative": [
+                "Included a hero image that demonstrates they are an IT company",
+                "Discussed some of the services they offer",
+                "Used colors that complement each other",
+                "Chose a font that means business - professional and clean cut"
             ],
             "hasLiveSite": false,
             "siteAddress": "",
@@ -219,8 +243,20 @@
             "mockup": "/images/mockups/peace.jpg",
             "mockupAlt": "Peace Lovin' Granola design project mockup",
             "summary": [
-                "An unofficial redesign mockup for Peace Lovin' Granola.",
-                "Discovered the prompt via 99designs."
+                "An unofficial homepage redesign mockup for Peace Lovin' Granola. Discovered the prompt via 99designs."
+            ],
+            "customer": [
+                "Showcase the product by including images provided",
+                "Display and describe ingredients",
+                "Convey that it is a family owned and run business",
+                "Include an ordering form",
+                "Show customer testimonials"
+            ],
+            "creative": [
+                "Create a sense of youth with the fonts, icons, and wording",
+                "Wanted an ordering form area that was simple and to the point",
+                "Action taking buttons that stand out for the customer",
+                "Included photo of the brothers/business owners to convey family, love, and friendliness"
             ],
             "hasLiveSite": false,
             "siteAddress": "",
@@ -241,8 +277,18 @@
             "mockup": "/images/mockups/sugarpop.jpg",
             "mockupAlt": "Sugar Pop Bakery design project mockup",
             "summary": [
-                "A design mockup created with Photoshop for a fictitious bakery business.",
-                "After creating the design mockup, I utilized HTML, Sass, and Bootstrap to create a live version of it."
+                "A design mockup created with Photoshop for a fictitious bakery business. After creating the design mockup, I utilized HTML5, CSS/Sass, and Bootstrap 4 to create a live version."
+            ],
+            "customer": [
+                "I had a lot of liberties since I filled customer role",
+                "I wanted something light and airy, minimalist, and feminine",
+                "Preference towards a company name that is simple and minimalist"
+            ],
+            "creative": [
+                "Chose light and pastel colors to create an airy vibe",
+                "Included product images that were minimalist and artistic",
+                "I wanted a company name that was simple and minimalist",
+                "Selected fonts that fulfilled both femininity and minimalism"
             ],
             "hasLiveSite": true,
             "siteAddress": "https://sugarpopbakery.netlify.app/",

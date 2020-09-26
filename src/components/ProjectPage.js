@@ -32,7 +32,7 @@ const ProjectPage = () => {
             </Header>
             <Main>
                 {project.type === 'react-js' ?
-                    <Summary>
+                    <ProjectDetails>
                         <SectionHeader>Summary</SectionHeader>
                         <TextWrapper>{project.summary}</TextWrapper>
                         <SectionHeader>Tech Used</SectionHeader>
@@ -62,16 +62,30 @@ const ProjectPage = () => {
                                 </BulletPoint>
                             )}
                         </TextWrapper>
-                    </Summary>
+                    </ProjectDetails>
                     :
-                    <Summary>
-                        {project.summary.map(sentence =>
-                            <BulletPoint>
-                                <Square />
-                                <Sentence>{sentence}</Sentence>
-                            </BulletPoint>
-                        )}
-                    </Summary>
+                    <ProjectDetails>
+                        <SectionHeader>Summary</SectionHeader>
+                        <TextWrapper>{project.summary}</TextWrapper>
+                        <SectionHeader>Customer Wants</SectionHeader>
+                        <TextWrapper>
+                            {project.customer.map(item =>
+                                <BulletPoint>
+                                    <Square />
+                                    <Sentence>{item}</Sentence>
+                                </BulletPoint>
+                            )}
+                        </TextWrapper>
+                        <SectionHeader>Creative Thought Process</SectionHeader>
+                        <TextWrapper>
+                            {project.creative.map(item =>
+                                <BulletPoint>
+                                    <Square />
+                                    <Sentence>{item}</Sentence>
+                                </BulletPoint>
+                            )}
+                        </TextWrapper>
+                    </ProjectDetails>
                 }
 
                 <ButtonsContainer>
@@ -171,7 +185,7 @@ const Main = styled.div`
     }
 `;
 
-const Summary = styled.div`
+const ProjectDetails = styled.div`
     font-size: 1.3rem;
     font-weight: 400;
     place-self: center;
