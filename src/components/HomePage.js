@@ -1,12 +1,15 @@
-import React, { Fragment, useState, useRef, useEffect } from 'react';
+import React, { Fragment, useState, useRef, useEffect, lazy, Suspense } from 'react';
 
 import Hero from './Hero';
 import Navbar from './Navbar';
-import About from './About';
-import Stack from './Stack';
-import Projects from './Projects';
-import Contact from './Contact';
-import Footer from './Footer';
+import Spinner from '../shared/Spinner';
+
+const About = lazy(() => import(`./About`));
+const Stack = lazy(() => import(`./Stack`));
+const Projects = lazy(() => import(`./Projects`));
+const Contact = lazy(() => import(`./Contact`));
+const Footer = lazy(() => import(`./Footer`));
+
 
 const HomePage = () => {
     const [isSticky, setSticky] = useState(false);
@@ -33,11 +36,13 @@ const HomePage = () => {
         <Fragment>
             <Hero heroOuterContainerRef={heroParentRef} />
             <Navbar isSticky={isSticky} />
-            <About />
-            <Stack />
-            <Projects />
-            <Contact />
-            <Footer />
+            <Suspense fallback={<Spinner />}>
+                <About />
+                <Stack />
+                <Projects />
+                <Contact />
+                <Footer />
+            </Suspense>
         </Fragment>
     )
 }
