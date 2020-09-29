@@ -316,7 +316,7 @@ const ProjectImage = styled.div`
 
 const ReactImage = styled.div`
     img {
-        max-width: 50vw;
+        max-width: 550px;
 
         @media (max-width: ${device.tabletM}) {
             max-width: 80vw;
