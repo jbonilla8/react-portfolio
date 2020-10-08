@@ -3,11 +3,20 @@ import { useParams } from 'react-router'
 import styled from 'styled-components';
 import { device } from '../shared/styles';
 import BackHomeIcon from '../images/icons/backhome.png';
+import ReactGA from 'react-ga';
 
 const ProjectPage = () => {
 
     const { id } = useParams();
     const [project, setProject] = useState();
+
+    const Event = (category, action, label) => {
+        ReactGA.event({
+            category: category,
+            action: action,
+            label: label
+        });
+    }
 
     useEffect(() => {
         fetch('/db.json')
@@ -90,7 +99,11 @@ const ProjectPage = () => {
 
                 <ButtonsContainer>
                     {project.hasGitHubRepo ? <a href={project.gitHubLink} target="_blank" rel="noopener noreferrer">
-                        <GitHubButton aria-label={`${project.gitHubBtnAriaLabel}`}>GitHub</GitHubButton>
+                        <GitHubButton
+                            aria-label={`${project.gitHubBtnAriaLabel}`}
+                            onClick={() => Event("GitHub", "GitHub link clicked", "ProjectPage")}>
+                            GitHub
+                        </GitHubButton>
                     </a> : null}
 
                     {project.hasLiveSite ? <a href={project.siteAddress} target="_blank" rel="noopener noreferrer">
